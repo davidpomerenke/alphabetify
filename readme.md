@@ -19,25 +19,13 @@ You will get used to them and learn the alphabet without any effort.
 import { alphabetify } from '@davidpomerenke/alphabetify'
 
 const text =
-'Tell me, O muse, of that ingenious hero who travelled far and wide after he had sacked the famous town of Troy. Many cities did he visit, and many were the nations with whose manners and customs he was acquainted; moreover he suffered much by sea while trying to save his own life and bring his men safely home; but do what he might he could not save his men, for they perished through their own sheer folly in eating the cattle of the Sun-god Hyperion; so the god prevented them from ever reaching home. Tell me, too, about all these things, O daughter of Jove, from whatsoever source you may know them.'
+'Tell me, O muse, of thαt ingenious hero who trαvelled fαr ἀnd wiδe ἀfter he ἁδ sαckεδ thε fαmous town of Troy. Mαny citiεs δiδ ἑ visit, ἀnδ mαny wεrε θε nαtions wιθ whosε mαnnεrs ἀnδ κustoms ἑ wαs ἀκquαιntεδ; morεovεr ἑ suffεrεδ muκh βι sεα whιλε trιιγγ to sαvε ἱs owν λιfε ἀνδ βrιγγ ἱs μεν sαfελι ὁμε; βut δο whαt ἑ μιγht hε κοuλδ νοt sαvε hις μεν, fορ θει περισhεδ θροuγh θειρ ὀwν σhεερ fολλι ἰν ἐατιγγ θε καττλε ὀφ θε Σουν-γοδ Hιπεριον; σο θε γοδ πρεουεντεδ θεμ φρομ εουερ ῥεαχιγγ ὁμε. Τελλ με, τοο, ἀβοουτ ἀλλ θεσε θιγγς, O δαυχτερ οφ Dιοουε, φρομ ὀυχατσοεουερ σοουρκε ἰοου μει κνοου θεμ.'
 
 alphabetify(text, 'grek-grc', 'en')
   .then(result => console.log(result))
 
 // Tell me, O muse, of thαt ingenious hero who trαvelled fαr αnd wiδe αfter he hαδ sακkεδ thε fαmous town oφ Troy. Mαny κitiεs δiδ hε visit, αnδ mαny wεrε thε nαtions with whosε mαnnεrs ἀnδ κustoms ἑ wαs ἀκquαιntεδ; morεovεr ἑ suφφεrεδ muχ βι sεα whιλε trιιγγ to sαvε ἱs own λιφε ἀνδ βrιγγ ἱs μεν sαφελι ὁμε; βut δο whαt ἑ μιχt hε κοuλδ νοt sαvε hιs μεν, φωρ thει περιχεδ thροuχ thειρ ὀwν χεερ φολλι ἰν ἐατιγγ τhε καττλε ὀφ τhε Σουν-γοδ Hιπεριον; σο τhε γοδ πρεουεντεδ τhεμ φρομ εουερ ῥεαχιγγ ὁμε. Τελλ με, τοο, ἀβοουτ ἀλλ θεσε θιγγς, O δαυχτερ οφ Dιοουε, φρομ ὀυατσοεουερ σοουρκε ἰοου μει κνοου θεμ.
 ```
-
-## Transliteration
-
-- The aim of the transliteration is not to achieve phonetic equivalence, but rather to establish a simple set of one-to-one (or a-few-to-one) character matchings: I believe this is the easiest way for the reader to spot patterns and to memorize the new alphabet. 
-
-- However, when there are script-specific concepts which could not be expressed by such simple non-phonetic matchings, phonetics may be taken into account. 
-
-  **E. g.:** the ancient greek *Omega* would probably be omitted in a simple non-phonetic matching, and the English *O* would be matched with *Omikron*. But the reader also wants to learn the letter *Omega*. A replacement rule set which distinguishes *Omikron* from *Omega* must take phonetics into account.
-
-  Deriving phonetics from written input text works to different degrees for different input languages. While in some rough rules can be established for German, there often appear to be almost no rules for English. That is sad.
-
-- It is aimed to achieve a balance between keeping the rule set small, and introducing special phonetics-related concepts in an accurate way.
 
 ## Syntax
 
@@ -96,7 +84,9 @@ This may be a bit abstract. Have a look into some of the JSON files in the `alph
 
 #### Short form
 
-The short form consists of tuples `[a, b, lang]`: 
+The short form files are found in the folder `alphabets/src`. If you would like to improve the rule sets, this is the place to look at. The files consist of a specification of the alphabet in regex terms (e. g., `a-z` for Latin), some optional macros (that is rules to be run on the rules) and of the list of rule blocks. Each rule block consists of rules in the short form. 
+
+The short form is a tuple `[a, b, lang]`: 
 
 - `a` is a regular expression string, `b` is a regular expression replacement string. 
 
@@ -110,9 +100,9 @@ The short form consists of tuples `[a, b, lang]`:
 
 #### Long form
 
-If you just want to develop new rules, you need not care about the long form. Just write it in short form and it will be automatically preprocessed to long from by running `npm run preprocess`.
+The long form will be generated automatically from the short form by running `npm run preprocess`.
 
-The long form consists of pairs `[a, b]` where `text.replace(new RegExp(a, 'g'), b)` will be applied on each pair, in the order of their appearance:
+The long form is a pair `[a, b]` where `alphabetify` will apply `text.replace(new RegExp(a, 'g'), b)` to the input text for each pair, in the order of their appearance:
 
 - The pairs are organized in lists, where each element contains all the rules that apply at a transliteration level. 
 
@@ -127,3 +117,15 @@ The long form consists of pairs `[a, b]` where `text.replace(new RegExp(a, 'g'),
   - Etc. pp. The crucial point is that at each step where an additional rule group is used, the rules have to be sorted again. 
 
 - There is a separate folder for each source language in the `alphabets/build` folder.
+
+### Note on transliteration
+
+- The aim of the transliteration is not to achieve phonetic equivalence, but rather to establish a simple set of one-to-one (or a-few-to-one) character matchings: I believe this is the easiest way for the reader to spot patterns and to memorize the new alphabet. 
+
+- However, when there are script-specific concepts which could not be expressed by such simple non-phonetic matchings, phonetics may be taken into account. 
+
+  **E. g.:** the ancient greek *Omega* would probably be omitted in a simple non-phonetic matching, and the English *O* would be matched with *Omikron*. But the reader also wants to learn the letter *Omega*. A replacement rule set which distinguishes *Omikron* from *Omega* must take phonetics into account.
+
+  Deriving phonetics from written input text works to different degrees for different input languages. While in some rough rules can be established for German, there often appear to be almost no rules for English. That is sad.
+
+- It is aimed to achieve a balance between keeping the rule set small, and introducing special phonetics-related concepts in a sufficiently accurate way.
