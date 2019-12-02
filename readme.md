@@ -27,6 +27,18 @@ alphabetify(text, 'grek-grc', 'en')
 // Tell me, O muse, of thαt ingenious hero who trαvelled fαr αnd wiδe αfter he hαδ sακkεδ thε fαmous town oφ Troy. Mαny κitiεs δiδ hε visit, αnδ mαny wεrε thε nαtions with whosε mαnnεrs ἀnδ κustoms ἑ wαs ἀκquαιntεδ; morεovεr ἑ suφφεrεδ muχ βι sεα whιλε trιιγγ to sαvε ἱs own λιφε ἀνδ βrιγγ ἱs μεν sαφελι ὁμε; βut δο whαt ἑ μιχt hε κοuλδ νοt sαvε hιs μεν, φωρ thει περιχεδ thροuχ thειρ ὀwν χεερ φολλι ἰν ἐατιγγ τhε καττλε ὀφ τhε Σουν-γοδ Hιπεριον; σο τhε γοδ πρεουεντεδ τhεμ φρομ εουερ ῥεαχιγγ ὁμε. Τελλ με, τοο, ἀβοουτ ἀλλ θεσε θιγγς, O δαυχτερ οφ Dιοουε, φρομ ὀυατσοεουερ σοουρκε ἰοου μει κνοου θεμ.
 ```
 
+## Transliteration
+
+- The aim of the transliteration is not to achieve phonetic equivalence, but rather to establish a simple set of one-to-one (or a-few-to-one) character matchings: I believe this is the easiest way for the reader to spot patterns and to memorize the new alphabet. 
+
+- However, when there are script-specific concepts which could not be expressed by such simple non-phonetic matchings, phonetics may be taken into account. 
+
+  **E. g.:** the ancient greek *Omega* would probably be omitted in a simple non-phonetic matching, and the English *O* would be matched with *Omikron*. But the reader also wants to learn the letter *Omega*. A replacement rule set which distinguishes *Omikron* from *Omega* must take phonetics into account.
+
+  Deriving phonetics from written input text works to different degrees for different input languages. While in some rough rules can be established for German, there often appear to be almost no rules for English. That is sad.
+
+- It is aimed to achieve a balance between keeping the rule set small, and introducing special phonetics-related concepts in an accurate way.
+
 ## Syntax
 
 `alphabetify(text, alphabet, [lang, [end, [random]]])`
@@ -41,13 +53,13 @@ The string of the original text which should be transliterated, in the source al
 
 The code string specifying the target alphabet: 
 
-| Code       | Alphabet          |
-|------------|-------------------|
-| `cyrl-ru`  | Russian           |
-| `grek-el`  | Modern Greek      |
-| `grek-grc` | Ancient Greek     |
-| `hira`     | Japanese Hiragana |
-| `kana`     | Japanese Katakana |
+| Code       | Alphabet          | Estimated Quality |
+|------------|-------------------|-------------------|
+| `cyrl-ru`  | Russian           | ⭐⭐⭐               |
+| `grek-el`  | Modern Greek      | ⭐⭐⭐⭐              |
+| `grek-grc` | Ancient Greek     | ⭐⭐⭐⭐⭐             |
+| `hira`     | Japanese Hiragana | ⭐⭐                |
+| `kana`     | Japanese Katakana | ⭐⭐                |
 
 **`lang`** *optional*
 
