@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Alphabetify</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" href="style.css">
+  <script src="bundle.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1 class="display-3">Learn alphabets naturally.</h1>
+    <p>
+      Alphabetify makes learning new alphabets easy.
+      Copypaste any text –
+      the breaking news,
+      your favourite book,
+      or a piece of homework.
+      Alphabetify will transform the text for you.
+      It starts with all symbols in your native alphabet,
+      then slowly introduces more and more foreign characters.
+      You will get used to them and learn the alphabet without any effort.
+      Try it!
+    </p>
+  </header>
+  <main>
+    <textarea id="source" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+Shall I compare thee to a summer's day?
+Thou art more lovely and more temperate:
+Rough winds do shake the darling buds of May,
+And summer's lease hath all too short a date:
+Sometime too hot the eye of heaven shines,
+And often is his gold complexion dimm'd;
+And every fair from fair sometime declines,
+By chance, or nature's changing course, untrimm'd;
+But thy eternal summer shall not fade
+Nor lose possession of that fair thou ow'st;
+Nor shall Death brag thou wander'st in his shade,
+When in eternal lines to time thou grow'st;
+So long as men can breathe or eyes can see,
+So long lives this, and this gives life to thee. 
+    </textarea>
+    <select id="alphabet">
+      <option hidden disabled selected>alphabetize</option>
+      <option value="grek-grc">
+        Greek (Ancient)
+      </option>
+      <option value="grek-el">
+        Greek (Modern)
+      </option>
+      <option value="hira">
+        Japanese Hiragana
+      </option>
+      <option value="kana">
+        Japanese Katakana
+      </option>
+    </select>
+    <textarea id="target" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+  </main>
+  <footer>
+    <p>
+      You can optionally specify the input language by adding something like <code>lang=de</code> to the beginning of your input. This will add some minor language-specific optimizations. English is assumed by default, and currently the only other language supported for optimization is German. 
+    </p>
+    <p>
+      If you would like to contribute,
+      for example,
+      by pointing out transliteration mistakes or improvements,
+      you are warmly welcome to do so on Github:
+    </p>
+    <a href="https://github.com/davidpomerenke/alphabetify">
+      <img src="github.png" alt="Github Logo with link to project site" />
+    </a>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>

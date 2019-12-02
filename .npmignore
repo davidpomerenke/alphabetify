@@ -1,0 +1,4 @@
+node_modules/
+alphabets/src
+alphabets/preprocess.mjs
+dist/
