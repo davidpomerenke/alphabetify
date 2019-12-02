@@ -1,16 +1,9 @@
 {
-  "name": "alphabetify",
+  "name": "@davidpomerenke/alphabetify",
   "version": "0.1.0",
   "description": "Learn a new alphabet by reading a good text in your native alphabet with more and more foreign letters.",
-  "main": "index.mjs",
-  "scripts": {
-    "bundle": "webpack --config webpack.config.js",
-    "prepare": "node --experimental-modules alphabets/preprocess.mjs && npm run bundle"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/davidpomerenke/alphabetify.git"
-  },
+  "author": "David Pomerenke",
+  "license": "ISC",
   "keywords": [
     "language-learning",
     "alphabet-learning",
@@ -19,12 +12,22 @@
     "learning",
     "education"
   ],
-  "author": "David Pomerenke",
-  "license": "ISC",
+  "homepage": "https://github.com/davidpomerenke/alphabetify#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidpomerenke/alphabetify.git"
+  },
   "bugs": {
     "url": "https://github.com/davidpomerenke/alphabetify/issues"
   },
-  "homepage": "https://github.com/davidpomerenke/alphabetify#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "main": "index.mjs",
+  "scripts": {
+    "bundle": "webpack --config webpack.config.js",
+    "prepare": "node --experimental-modules alphabets/preprocess.mjs && npm run bundle"
+  },
   "devDependencies": {
     "@babel/core": "^7.7.4",
     "@babel/plugin-syntax-dynamic-import": "^7.7.4",
