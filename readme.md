@@ -43,6 +43,7 @@ The code string specifying the target alphabet:
 
 | Code       | Alphabet          |
 |------------|-------------------|
+| `cyrl-ru`  | Russian           |
 | `grek-el`  | Modern Greek      |
 | `grek-grc` | Ancient Greek     |
 | `hira`     | Japanese Hiragana |
