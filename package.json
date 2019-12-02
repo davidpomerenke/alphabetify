@@ -13,10 +13,7 @@
     "education"
   ],
   "homepage": "https://github.com/davidpomerenke/alphabetify#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/davidpomerenke/alphabetify.git"
-  },
+  "repository": "github:davidpomerenke/alphabetify",
   "bugs": {
     "url": "https://github.com/davidpomerenke/alphabetify/issues"
   },
