@@ -1,4 +1,5 @@
+.github
+alphabets/build/
+docs/
 node_modules/
-alphabets/src
-alphabets/preprocess.mjs
-dist/
+webpack.config.js

@@ -23,6 +23,8 @@ const text =
 
 alphabetify(text, 'grek-grc', 'en')
   .then(result => console.log(result))
+
+// Tell me, O muse, of thαt ingenious hero who trαvelled fαr αnd wiδe αfter he hαδ sακkεδ thε fαmous town oφ Troy. Mαny κitiεs δiδ hε visit, αnδ mαny wεrε thε nαtions with whosε mαnnεrs ἀnδ κustoms ἑ wαs ἀκquαιntεδ; morεovεr ἑ suφφεrεδ muχ βι sεα whιλε trιιγγ to sαvε ἱs own λιφε ἀνδ βrιγγ ἱs μεν sαφελι ὁμε; βut δο whαt ἑ μιχt hε κοuλδ νοt sαvε hιs μεν, φωρ thει περιχεδ thροuχ thειρ ὀwν χεερ φολλι ἰν ἐατιγγ τhε καττλε ὀφ τhε Σουν-γοδ Hιπεριον; σο τhε γοδ πρεουεντεδ τhεμ φρομ εουερ ῥεαχιγγ ὁμε. Τελλ με, τοο, ἀβοουτ ἀλλ θεσε θιγγς, O δαυχτερ οφ Dιοουε, φρομ ὀυατσοεουερ σοουρκε ἰοου μει κνοου θεμ.
 ```
 
 ## Syntax
@@ -73,7 +75,7 @@ A promise, which on resolution returns the string with the increasingly translit
 
 ## Development
 
-Transliteration rules are converted from a short form (e. g., only involving lowercase letters) in `alphabets/src/` to a long form in `alphabets/build`. This is done with the `alphabets/preprocess` module, which is run by `npm prepare`. The code, including the resulting long form rules, is bundled for web use by running `npm run bundle`. 
+Transliteration rules are converted from a short form (e. g., only involving lowercase letters) in `alphabets/src/` to a long form in `alphabets/build`. This is done with the `alphabets/preprocess` module, which is run by `npm run preprocess`. The code, including the resulting long form rules, is bundled for web use by running `npm run bundle`. 
 
 ### Transliteration rules
 
@@ -87,7 +89,7 @@ The short form consists of tuples `[a, b, lang]`:
 
 - `lang` is an optional specifier of the language to which the rule is restricted, such as `en` or `de`. 
 
-- Only lowercase letters are used in `a` and `b`. 
+- Only lowercase letters are used in `a` and `b`. Uppercase and mixed-case will be handled automatically.
 
 - The rules will be applied in the order of their length (excluding bracketed parts), starting with the longest rule. It may sometimes be appropriate to give higher priority to certain rules. In this case, underscores `_` can be inserted at one's convenience. They will increase the length for the priority sorting and will be ignored afterwards.
 
@@ -95,7 +97,7 @@ The short form consists of tuples `[a, b, lang]`:
 
 #### Long form
 
-If you just want to develop new rules, you need not care about the long form. Just write it in short form and it will be automatically preprocessed to long from by running `npm prepare`.
+If you just want to develop new rules, you need not care about the long form. Just write it in short form and it will be automatically preprocessed to long from by running `npm run preprocess`.
 
 The long form consists of pairs `[a, b]` where `text.replace(new RegExp(a, 'g'), b)` will be applied on each pair, in the order of their appearance:
 
