@@ -1,6 +1,6 @@
 # Alphabetify
 
-[![Gitter](https://badges.gitter.im/aima-js/community.svg)](https://gitter.im/alphabetify/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Gitter](https://badges.gitter.im/alphabetify/community.svg)](https://gitter.im/alphabetify/alphabetify)
 
 Alphabetify makes learning new alphabets easy.
 Copypaste any text –
