@@ -5,6 +5,10 @@ import fs from 'fs'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
 const main = () => {
+  const dir = `${__dirname}/build`
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir);
+  }
   fs.readdir(`${__dirname}/src`, (e, files) => {
     console.log(e || `successfully opened ${__dirname}/build`)
     for (const file of files) {
@@ -13,8 +17,12 @@ const main = () => {
         if (!e) {
           const alphabet = JSON.parse(data)
           for (const lang of alphabet.languages) {
+            const dir = `${__dirname}/build/${lang}`
+            if (!fs.existsSync(dir)) {
+              fs.mkdirSync(dir);
+            }
             fs.writeFile(
-              `${__dirname}/build/${lang}/${file}`,
+              `${dir}/${file}`,
               JSON.stringify(preprocess(alphabet, lang), null, 2),
               'utf8',
               e => {
