@@ -19,17 +19,17 @@ You will get used to them and learn the alphabet without any effort.
 import { alphabetify } from '@davidpomerenke/alphabetify'
 
 const text =
-'Tell me, O muse, of thαt ingenious hero who trαvelled fαr ἀnd wiδe ἀfter he ἁδ sαckεδ thε fαmous town of Troy. Mαny citiεs δiδ ἑ visit, ἀnδ mαny wεrε θε nαtions wιθ whosε mαnnεrs ἀnδ κustoms ἑ wαs ἀκquαιntεδ; morεovεr ἑ suffεrεδ muκh βι sεα whιλε trιιγγ to sαvε ἱs owν λιfε ἀνδ βrιγγ ἱs μεν sαfελι ὁμε; βut δο whαt ἑ μιγht hε κοuλδ νοt sαvε hις μεν, fορ θει περισhεδ θροuγh θειρ ὀwν σhεερ fολλι ἰν ἐατιγγ θε καττλε ὀφ θε Σουν-γοδ Hιπεριον; σο θε γοδ πρεουεντεδ θεμ φρομ εουερ ῥεαχιγγ ὁμε. Τελλ με, τοο, ἀβοουτ ἀλλ θεσε θιγγς, O δαυχτερ οφ Dιοουε, φρομ ὀυχατσοεουερ σοουρκε ἰοου μει κνοου θεμ.'
+'Tell me, O muse, of that ingenious hero who travelled far and wide after he had sacked the famous town of Troy. Many cities did he visit, and many were the nations with whose manners and customs he was acquainted; moreover he suffered much by sea while trying to save his own life and bring his men safely home; but do what he might he could not save his men, for they perished through their own sheer folly in eating the cattle of the Sun-god Hyperion; so the god prevented them from ever reaching home. Tell me, too, about all these things, O daughter of Jove, from whatsoever source you may know them.'
 
 alphabetify(text, 'grek-grc', 'en')
   .then(result => console.log(result))
 
-// Tell me, O muse, of thαt ingenious hero who trαvelled fαr αnd wiδe αfter he hαδ sακkεδ thε fαmous town oφ Troy. Mαny κitiεs δiδ hε visit, αnδ mαny wεrε thε nαtions with whosε mαnnεrs ἀnδ κustoms ἑ wαs ἀκquαιntεδ; morεovεr ἑ suφφεrεδ muχ βι sεα whιλε trιιγγ to sαvε ἱs own λιφε ἀνδ βrιγγ ἱs μεν sαφελι ὁμε; βut δο whαt ἑ μιχt hε κοuλδ νοt sαvε hιs μεν, φωρ thει περιχεδ thροuχ thειρ ὀwν χεερ φολλι ἰν ἐατιγγ τhε καττλε ὀφ τhε Σουν-γοδ Hιπεριον; σο τhε γοδ πρεουεντεδ τhεμ φρομ εουερ ῥεαχιγγ ὁμε. Τελλ με, τοο, ἀβοουτ ἀλλ θεσε θιγγς, O δαυχτερ οφ Dιοουε, φρομ ὀυατσοεουερ σοουρκε ἰοου μει κνοου θεμ.
+// Tell me, O muse, of thαt ingenious hero who trαvelled fαr ἀnd wiδe ἀfter he ἁδ sαckεδ thε fαmous town of Troy. Mαny citiεs δiδ ἑ visit, ἀnδ mαny wεrε θε nαtions wιθ whosε mαnnεrs ἀnδ κustoms ἑ wαs ἀκquαιntεδ; morεovεr ἑ suffεrεδ muκh βι sεα whιλε trιιγγ to sαvε ἱs owν λιfε ἀνδ βrιγγ ἱs μεν sαfελι ὁμε; βut δο whαt ἑ μιγht hε κοuλδ νοt sαvε hις μεν, fορ θει περισhεδ θροuγh θειρ ὀwν σhεερ fολλι ἰν ἐατιγγ θε καττλε ὀφ θε Σουν-γοδ Hιπεριον; σο θε γοδ πρεουεντεδ θεμ φρομ εουερ ῥεαχιγγ ὁμε. Τελλ με, τοο, ἀβοουτ ἀλλ θεσε θιγγς, O δαυχτερ οφ Dιοουε, φρομ ὀυχατσοεουερ σοουρκε ἰοου μει κνοου θεμ.
 ```
 
 ## Syntax
 
-`alphabetify(text, alphabet, [lang, [end, [random]]])`
+`alphabetify(text, alphabet, [lang, [pre, [post]]])`
 
 ### Parameters
 
@@ -41,13 +41,13 @@ The string of the original text which should be transliterated, in the source al
 
 The code string specifying the target alphabet: 
 
-| Code       | Alphabet          | Estimated Quality |
-|------------|-------------------|-------------------|
-| `cyrl-ru`  | Russian           | ⭐⭐⭐               |
-| `grek-el`  | Modern Greek      | ⭐⭐⭐⭐              |
-| `grek-grc` | Ancient Greek     | ⭐⭐⭐⭐⭐             |
-| `hira`     | Japanese Hiragana | ⭐⭐                |
-| `kana`     | Japanese Katakana | ⭐⭐                |
+| Code       | Alphabet          | Quality                        |
+|------------|-------------------|--------------------------------|
+| `cyrl-ru`  | Russian           | :star::star::star:             |
+| `grek-el`  | Modern Greek      | :star::star::star::star:       |
+| `grek-grc` | Ancient Greek     | :star::star::star::star::star: |
+| `hira`     | Japanese Hiragana | :star::star:                   |
+| `kana`     | Japanese Katakana | :star::star:                   |
 
 **`lang`** *optional*
 
