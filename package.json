@@ -1,5 +1,5 @@
 {
-  "name": "@davidpomerenke/alphabetify",
+  "name": "alphabetify",
   "version": "0.1.6",
   "description": "Learn a new alphabet by reading a good text in your native alphabet with more and more foreign letters.",
   "author": "David Pomerenke",
@@ -13,12 +13,9 @@
     "education"
   ],
   "homepage": "https://github.com/davidpomerenke/alphabetify#readme",
-  "repository": "github:davidpomerenke/alphabetify",
+  "repository": "git://github.com/davidpomerenke/alphabetify.git",
   "bugs": {
     "url": "https://github.com/davidpomerenke/alphabetify/issues"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   },
   "main": "index.mjs",
   "scripts": {
