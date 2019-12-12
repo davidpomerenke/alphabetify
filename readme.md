@@ -1,7 +1,7 @@
 # Alphabetify
 
 [![NPM version](https://img.shields.io/npm/v/alphabetify.svg)](https://www.npmjs.com/package/alphabetify)
-![](https://github.com/davidpomerenke/alphabetify/workflows/Node%20CI/badge.svg)
+[![Node CI](https://github.com/davidpomerenke/alphabetify/workflows/Node%20CI/badge.svg)](https://github.com/davidpomerenke/alphabetify/actions?query=workflow%3A%22Node+CI%22)
 [![Gitter](https://badges.gitter.im/alphabetify/community.svg)](https://gitter.im/alphabetify/alphabetify)
 
 Alphabetify makes learning new alphabets easy.
@@ -43,13 +43,13 @@ The string of the original text which should be transliterated, in the source al
 
 The code string specifying the target alphabet: 
 
-| Code       | Alphabet          | Quality                        |
-|------------|-------------------|--------------------------------|
-| `cyrl-ru`  | Russian           | :star::star::star:             |
-| `grek-el`  | Modern Greek      | :star::star::star::star:       |
-| `grek-grc` | Ancient Greek     | :star::star::star::star::star: |
-| `hira`     | Japanese Hiragana | :star::star:                   |
-| `kana`     | Japanese Katakana | :star::star:                   |
+| Code       | Alphabet          | Quality                  |
+|------------|-------------------|--------------------------|
+| `cyrl-ru`  | Russian           | :star::star:             |
+| `grek-el`  | Modern Greek      | :star::star::star:       |
+| `grek-grc` | Ancient Greek     | :star::star::star::star: |
+| `hira`     | Japanese Hiragana | :star:                   |
+| `kana`     | Japanese Katakana | :star:                   |
 
 **`lang`** *optional*
 
