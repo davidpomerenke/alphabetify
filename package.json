@@ -21,7 +21,8 @@
   "scripts": {
     "bundle": "webpack --config webpack.config.js",
     "preprocess": "node --experimental-modules alphabets/preprocess.mjs",
-    "postinstall": "npm run preprocess"
+    "postinstall": "npm run preprocess",
+    "test": "node --experimental-modules test.mjs"
   },
   "devDependencies": {
     "@babel/core": "^7.7.4",
