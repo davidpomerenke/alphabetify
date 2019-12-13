@@ -130,4 +130,4 @@ The long form is a pair `[a, b]` where `alphabetify` will apply `text.replace(ne
 
   Deriving phonetics from written input text works to different degrees for different input languages. While in some rough rules can be established for German, there often appear to be almost no rules for English. That is sad.
 
-- It is aimed to achieve a balance between keeping the rule set small, and introducing special phonetics-related concepts in a sufficiently accurate way. 
+- It is aimed to achieve a balance between keeping the rule set small, and introducing special phonetics-related concepts in a sufficiently accurate way.
