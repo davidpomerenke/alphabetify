@@ -2,6 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/alphabetify.svg)](https://www.npmjs.com/package/alphabetify)
 [![Node CI](https://github.com/davidpomerenke/alphabetify/workflows/Node%20CI/badge.svg)](https://github.com/davidpomerenke/alphabetify/actions?query=workflow%3A%22Node+CI%22)
+[![codecov](https://codecov.io/gh/davidpomerenke/alphabetify/branch/master/graph/badge.svg)](https://codecov.io/gh/davidpomerenke/alphabetify)
 [![Gitter](https://badges.gitter.im/alphabetify/community.svg)](https://gitter.im/alphabetify/alphabetify)
 
 Alphabetify makes learning new alphabets easy.
