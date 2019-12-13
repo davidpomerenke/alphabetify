@@ -23,8 +23,7 @@
     "preprocess": "node --experimental-modules alphabets/preprocess.mjs",
     "postinstall": "npm run preprocess",
     "test": "node --experimental-modules index.test.mjs",
-    "coverage": "c8 --reporter=text-lcov npm test",
-    "codecov": "npm run coverage > coverage.lcov && codecov -t ${{secrets.CODECOV_TOKEN}}"
+    "coverage": "c8 --reporter=text-lcov npm test > coverage.lcov"
   },
   "devDependencies": {
     "@babel/core": "^7.7.4",
