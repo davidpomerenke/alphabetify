@@ -24,6 +24,6 @@ jobs:
       run: |
         npm ci
         npm test
-        npm codecov
+        npm run codecov
       env:
         CI: true
