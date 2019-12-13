@@ -39,7 +39,6 @@ export const alphabetify = (text, alphabet, lang = 'en', pre = 0, post = 0) =>
               (prev, [original, replacement]) =>
                 prev.replace(new RegExp(original, 'g'), replacement),
               chunk))
-      const output = [...start, ...main, ...end].join('')
-      return output
+      return [...start, ...main, ...end].join('')
     })
     .catch(e => { throw new Error(`The specified language ${lang} is not supported.`) })
