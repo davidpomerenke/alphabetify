@@ -22,7 +22,9 @@
     "bundle": "webpack --config webpack.config.js",
     "preprocess": "node --experimental-modules alphabets/preprocess.mjs",
     "postinstall": "npm run preprocess",
-    "test": "node --experimental-modules test.mjs"
+    "test": "node --experimental-modules index.test.mjs",
+    "coverage": "c8 --reporter=text-lcov npm test",
+    "codecov": "npm run coverage > coverage.lcov && codecov -t ${{secrets.CODECOV_TOKEN}}"
   },
   "devDependencies": {
     "@babel/core": "^7.7.4",
@@ -30,6 +32,7 @@
     "@babel/preset-env": "^7.7.4",
     "babel-loader": "^8.0.6",
     "babel-polyfill": "^6.26.0",
+    "codecov": "^3.6.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   }
