@@ -1,8 +1,16 @@
 import { alphabetify } from './index.mjs'
 import { strict as assert } from 'assert'
 
+const notext = ''
+alphabetify(notext, 'grek-grc', 'en')
+  .then(result => assert.equal(result, ''))
+
 const text =
 'Tell me, O muse, of that ingenious hero who travelled far and wide after he had sacked the famous town of Troy. Many cities did he visit, and many were the nations with whose manners and customs he was acquainted; moreover he suffered much by sea while trying to save his own life and bring his men safely home; but do what he might he could not save his men, for they perished through their own sheer folly in eating the cattle of the Sun-god Hyperion; so the god prevented them from ever reaching home. Tell me, too, about all these things, O daughter of Jove, from whatsoever source you may know them.'
+
+alphabetify(text, 'grek-grc', 'en', 0.5, 0.5)
+  .then(result => assert.equal(result,
+    'Tell me, O muse, of that ingenious hero who travelled far and wide after he had sacked the famous town of Troy. Many cities did he visit, and many were the nations with whose manners and customs he was acquainted; moreover he suffered much by sea while trying to save his own life and bring his men safely home; but δο ὀυχατ ἑ μιχτ hε κοουλδ νοτ σαουε hις μεν, φωρ θει περισhεδ θροουχ θειρ ὀουν σhεερ φολλι ἰν ἐατιγγ θε καττλε ὀφ θε Σουν-γοδ Hιπεριον; σο θε γοδ πρεουεντεδ θεμ φρομ εουερ ῥεαχιγγ ὁμε. Τελλ με, τοο, ἀβοουτ ἀλλ θεσε θιγγς, O δαυχτερ οφ Dιοουε, φρομ ὀυχατσοεουερ σοουρκε ἰοου μει κνοου θεμ.'))
 
 alphabetify(text, 'grek-grc', 'en')
   .then(result => assert.equal(result,
