@@ -20,6 +20,9 @@
     "test": "node test/test.mjs",
     "coverage": "c8 --reporter=text-lcov npm test > coverage.lcov"
   },
+  "engines": {
+    "node": ">= 13.0"
+  },
   "devDependencies": {
     "c8": "^7.1.0",
     "codecov": "^3.6.5",
