@@ -7,29 +7,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto Sans">
   <link rel="stylesheet" href="style.css">
-  <script src="bundle.js"></script>
 </head>
 
 <body>
 
-  {{ content }}
+  <header>
+    <nav>
+      {% if page.url == "/de.html" %} <a href="/"> {% endif %}
+        [en]
+      {% if page.url == "/de.html" %} </a> {% endif %}
+      {% if page.url == "/" %} <a href="de"> {% endif %}
+        [de]
+      {% if page.url == "/" %} </a> {% endif %}
+    </nav>
+    <h1 class="display-3">{{ page.slogan }}</h1>
+    <p>
+      {{ page.teaser }}
+    </p>
+  </header>
+
+  <main>
+    <textarea id="source" autocomplete="off" autocorrect="off" autocapitalize="off"
+      spellcheck="false">{{ page.sample }}</textarea>
+    <select id="alphabet">
+      <option hidden disabled selected>Alphabetify!</option>
+      <option value="grek-grc">
+        {{ page.options.grek-grc }}
+      </option>
+      <option value="grek-el">
+        {{ page.options.grek-el }}
+      </option>
+      <option value="hira">
+        {{ page.options.hira }}
+      </option>
+      <option value="kana">
+        {{ page.options.kana }}
+      </option>
+      <option value="cyrl-ru">
+        {{ page.options.cyrl-ru }}
+      </option>
+    </select>
+    <textarea id="target" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+  </main>
 
   <footer>
     <p>
-      The transliteration is optimized for English input by default. You can add <code>lang=de </code> to the beginning
-      of your input to optimize for German input.
-    </p>
-    <p>
-      If you would like to contribute,
-      for example,
-      by pointing out transliteration mistakes or improvements,
-      you are warmly welcome to do so on Github:
+      {{ page.contributing }}
     </p>
     <a href=" https://github.com/davidpomerenke/alphabetify">
-<img src="github.png" alt="Github Logo with link to project site" />
-</a>
-</footer>
-<script src="index.js"></script>
+      <img src="github.png" alt="project site" />
+    </a>
+  </footer>
+
+  <script src="bundle.js"></script>
+  <script src="index.js"></script>
+
 </body>
 
 </html>

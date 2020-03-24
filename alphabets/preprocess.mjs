@@ -11,6 +11,8 @@ const main = () => {
   }
   fs.readdir(`${__dirname}/src`, (e, files) => {
     console.log(e || `successfully opened ${__dirname}/build`)
+    fs.writeFile(`${dir}/alphabets.json`, JSON.stringify(files, null, 2), 'utf8',
+      (e, _) => console.log(e || `successfully written alphabet list`))
     for (const file of files) {
       fs.readFile(`${__dirname}/src/${file}`, 'utf8', (e, data) => {
         console.log(e || `successfully read src/${file}`)
@@ -25,9 +27,7 @@ const main = () => {
               `${dir}/${file}`,
               JSON.stringify(preprocess(alphabet, lang), null, 2),
               'utf8',
-              e => {
-                console.log(e || `successfully written build/${lang}/${file}`)
-              })
+              (e, _) => console.log(e || `successfully written build/${lang}/${file}`))
           }
         }
       })

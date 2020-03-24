@@ -6,6 +6,11 @@ body {
   padding-top: 40px;
 }
 
+nav, nav a {
+  text-align: right;
+  text-decoration: none;
+}
+
 h1 {
   display: inline;
 }
