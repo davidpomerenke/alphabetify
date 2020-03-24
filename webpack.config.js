@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-  entry: ['babel-polyfill', './docs/webpack.js'],
+  entry: ['./docs/webpack.js'],
   mode: 'production',
   output: {
     filename: 'bundle.js',

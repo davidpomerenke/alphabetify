@@ -1,33 +1,27 @@
-<!doctype html>
-<html lang="en">
+---
+layout: default
+language: en
+---
 
-<head>
-  <title>Alphabetify</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open Sans">
-  <link rel="stylesheet" href="style.css">
-  <script src="bundle.js"></script>
-</head>
+<header>
+  <h1 class="display-3">Learn alphabets naturally.</h1>
+  <p>
+    Alphabetify makes learning new alphabets easy.
+    Copypaste any text –
+    the breaking news,
+    your favourite book,
+    or a piece of homework.
+    Alphabetify will transform the text for you.
+    It starts with all symbols in your native alphabet,
+    then slowly introduces more and more foreign characters.
+    You will get used to them and learn the alphabet without any effort.
+    Try it!
+  </p>
+</header>
 
-<body>
-  <header>
-    <h1 class="display-3">Learn alphabets naturally.</h1>
-    <p>
-      Alphabetify makes learning new alphabets easy.
-      Copypaste any text –
-      the breaking news,
-      your favourite book,
-      or a piece of homework.
-      Alphabetify will transform the text for you.
-      It starts with all symbols in your native alphabet,
-      then slowly introduces more and more foreign characters.
-      You will get used to them and learn the alphabet without any effort.
-      Try it!
-    </p>
-  </header>
-  <main>
-    <textarea id="source" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+<main>
+
+  <textarea id="source" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
 Shall I compare thee to a summer's day?
 Thou art more lovely and more temperate:
 Rough winds do shake the darling buds of May,
@@ -43,41 +37,26 @@ When in eternal lines to time thou grow'st;
 So long as men can breathe or eyes can see,
 So long lives this, and this gives life to thee. 
     </textarea>
-    <select id="alphabet">
-      <option hidden disabled selected>alphabetize</option>
-      <option value="grek-grc">
-        Greek (Ancient)
-      </option>
-      <option value="grek-el">
-        Greek (Modern)
-      </option>
-      <option value="hira">
-        Japanese Hiragana
-      </option>
-      <option value="kana">
-        Japanese Katakana
-      </option>
-      <option value="cyrl-ru">
-        Russian
-      </option>
-    </select>
-    <textarea id="target" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
-  </main>
-  <footer>
-    <p>
-      The transliteration is optimized for English input by default. You can add <code>lang=de </code> to the beginning of your input to optimize for German input.
-    </p>
-    <p>
-      If you would like to contribute,
-      for example,
-      by pointing out transliteration mistakes or improvements,
-      you are warmly welcome to do so on Github:
-    </p>
-    <a href="https://github.com/davidpomerenke/alphabetify">
-      <img src="github.png" alt="Github Logo with link to project site" />
-    </a>
-  </footer>
-  <script src="index.js"></script>
-</body>
 
-</html>
+  <select id="alphabet">
+    <option hidden disabled selected>Alphabetify!</option>
+    <option value="grek-grc">
+      Greek (Ancient)
+    </option>
+    <option value="grek-el">
+      Greek (Modern)
+    </option>
+    <option value="hira">
+      Japanese Hiragana
+    </option>
+    <option value="kana">
+      Japanese Katakana
+    </option>
+    <option value="cyrl-ru">
+      Russian
+    </option>
+  </select>
+
+  <textarea id="target" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+
+</main>

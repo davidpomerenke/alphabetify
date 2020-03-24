@@ -1,3 +1,5 @@
-import { alphabetify } from '../index.mjs'
+import { alph } from '../lib/index.js'
 
-window.alphabetify = alphabetify
+console.log(alph)
+
+window.alphabetify = alph.alphabetify

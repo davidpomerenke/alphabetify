@@ -1,5 +1,5 @@
 export const alphabetify = (text, alphabet, lang = 'en', pre = 0, post = 0) =>
-  import(`./alphabets/build/${lang}/${alphabet}.json`)
+  import(`../alphabets/build/${lang}/${alphabet}.json`)
     .then(({ default: alphabet }) => {
       const wordGroupLength =
         Math.max(

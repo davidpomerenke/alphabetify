@@ -1,6 +1,6 @@
 body {
   max-width: 600px;
-  font-family: 'Open Sans';
+  font-family: 'Noto Sans';
   margin: 0 auto;
   padding: 5px;
   padding-top: 40px;
@@ -29,6 +29,7 @@ select {
   background-color: beige;
   font-weight: bold;
   text-align: center;
+  text-align-last: center;
 }
 
 select {
