@@ -1,7 +1,5 @@
-import alph from '../lib/index.js'
+import { alphabetify } from '../lib/index.mjs'
 import { strict as assert } from 'assert'
-
-const alphabetify = alph.alphabetify
 
 const notext = ''
 alphabetify(notext, 'grek-grc', 'en')

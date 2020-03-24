@@ -3,7 +3,6 @@
 [![NPM version](https://img.shields.io/npm/v/alphabetify.svg)](https://www.npmjs.com/package/alphabetify)
 [![Node CI](https://github.com/davidpomerenke/alphabetify/workflows/Node%20CI/badge.svg)](https://github.com/davidpomerenke/alphabetify/actions?query=workflow%3A%22Node+CI%22)
 [![codecov](https://codecov.io/gh/davidpomerenke/alphabetify/branch/master/graph/badge.svg)](https://codecov.io/gh/davidpomerenke/alphabetify)
-[![Gitter](https://badges.gitter.im/alphabetify/community.svg)](https://gitter.im/alphabetify/alphabetify)
 
 Alphabetify makes learning new alphabets easy.
 Copypaste any text –
@@ -76,6 +75,9 @@ The integer specifying the proportion of text at the end of the `text` string wh
 ### Return value
 
 A promise, which on resolution returns the string with the increasingly transliterated text. You can process it by appending something like `.then(output => process(output)).catch(error => throw error)` to the function call. 
+
+### Usage in browser
+This module makes use of the `fs` module, which is available in Node JS, but not in the browser. For usage in the browser, use bundling with [Webpack](https://webpack.js.org/) or an equivalent tool and have a look at the configuration in `webpack.config.js`, `docs/webpack-entry.js` and `docs/index.js`.
 
 ## Development
 

@@ -12,25 +12,15 @@
     "learning",
     "education"
   ],
-  "homepage": "https://github.com/davidpomerenke/alphabetify#readme",
   "repository": "git://github.com/davidpomerenke/alphabetify.git",
-  "bugs": {
-    "url": "https://github.com/davidpomerenke/alphabetify/issues"
-  },
-  "main": "index.js",
+  "main": "lib/index.mjs",
   "scripts": {
-    "build": "babel src/index.mjs -d lib && webpack",
+    "build": "webpack",
     "postinstall": "node alphabets/preprocess.mjs",
     "test": "node test/test.mjs",
     "coverage": "c8 --reporter=text-lcov npm test > coverage.lcov"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-    "@babel/preset-env": "^7.9.0",
-    "babel-loader": "^8.1.0",
-    "babel-polyfill": "^6.26.0",
     "c8": "^7.1.0",
     "codecov": "^3.6.5",
     "webpack": "^4.42.1",
