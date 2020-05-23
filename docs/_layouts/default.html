@@ -5,32 +5,34 @@
   <title>Alphabetify</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto Sans">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap.min.css" />
 </head>
 
-<body>
+<body class="container" style="max-width: 75ch">
 
   <header>
+    <br />
     <nav>
       {% if page.url == "/de.html" %} <a href="/"> {% endif %}
         [en]
-      {% if page.url == "/de.html" %} </a> {% endif %}
+        {% if page.url == "/de.html" %} </a> {% endif %}
       {% if page.url == "/" %} <a href="de"> {% endif %}
         [de]
-      {% if page.url == "/" %} </a> {% endif %}
+        {% if page.url == "/" %} </a> {% endif %}
     </nav>
-    <h1 class="display-3">{{ page.slogan }}</h1>
+    <br />
+    <h1 class="display-4">{{ page.slogan }}</h1>
     <p>
       {{ page.teaser }}
     </p>
   </header>
 
   <main>
-    <textarea id="source" autocomplete="off" autocorrect="off" autocapitalize="off"
-      spellcheck="false">{{ page.sample }}</textarea>
-    <select id="alphabet">
-      <option hidden disabled selected>Alphabetify!</option>
+    <textarea id="source" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+      class="form-control" style="min-height: 200px">{{ page.sample }}</textarea><br />
+    <select id="alphabet" class="custom-select">
+      <option hidden>{{ page.select }}</option>
+      <option disabled>{{ page.select }}</option>
       <option value="grek-grc">
         {{ page.options.grek-grc }}
       </option>
@@ -46,17 +48,15 @@
       <option value="cyrl-ru">
         {{ page.options.cyrl-ru }}
       </option>
-    </select>
-    <textarea id="target" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    </select><br /><br />
+    <textarea id="target" readonly autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+      class="form-control" style="min-height: 200px"></textarea><br />
   </main>
 
   <footer>
     <p>
       {{ page.contributing }}
     </p>
-    <a href=" https://github.com/davidpomerenke/alphabetify">
-      <img src="github.png" alt="project site" />
-    </a>
   </footer>
 
   <script src="bundle.js"></script>

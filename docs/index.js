@@ -2,7 +2,6 @@ const buildDir = 'https://raw.githubusercontent.com/davidpomerenke/alphabetify/m
 const select = document.getElementById('alphabet')
 const source = window.document.getElementById('source')
 const target = document.getElementById('target')
-select.onclick = () => (select.selectedIndex = 0)
 select.onchange = () => {
   target.value = ''
   const alphabetCode = select.options[select.selectedIndex].value
