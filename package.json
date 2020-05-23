@@ -15,6 +15,7 @@
   "repository": "git://github.com/davidpomerenke/alphabetify.git",
   "main": "lib/index.mjs",
   "scripts": {
+    "start": "cd docs && bundle exec jekyll serve",
     "build": "webpack",
     "postinstall": "node alphabets/preprocess.mjs",
     "test": "node test/test.mjs",
@@ -24,9 +25,9 @@
     "node": ">= 13.0"
   },
   "devDependencies": {
-    "c8": "^7.1.0",
-    "codecov": "^3.6.5",
-    "webpack": "^4.42.1",
+    "c8": "^7.1.2",
+    "codecov": "^3.7.0",
+    "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   }
 }
