@@ -5,6 +5,21 @@
   <title>Alphabetify</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ page.description }}">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alphabetify">
+  <meta name="twitter:description" content="{{ page.description }}">
+  <meta name="twitter:creator" content="@davidpomerenke">
+  <meta name="twitter:image" content="https://alphabetify.js.org/thumbnail.png">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:url" content="https://alphabetify.js.org/{% if page.language != 'en' %}{{ page.language }}{%endif %}" />
+  <meta property="og:image" content="https://alphabetify.js.org/thumbnail.png" />
+  <meta property="og:description" content="{{ page.description }}" />
+
   <link rel="stylesheet" href="bootstrap.min.css" />
 </head>
 
@@ -56,6 +71,9 @@
   <footer>
     <p>
       {{ page.contributing }}
+    </p>
+    <p class="text-secondary">
+      {{ page.tags }}
     </p>
   </footer>
 
