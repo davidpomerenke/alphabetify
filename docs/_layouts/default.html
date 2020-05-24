@@ -16,7 +16,8 @@
 
   <!-- Open Graph data -->
   <meta property="og:title" content="{{ page.title }}" />
-  <meta property="og:url" content="https://alphabetify.js.org/{% if page.language != 'en' %}{{ page.language }}{%endif %}" />
+  <meta property="og:url"
+    content="https://alphabetify.js.org/{% if page.language != 'en' %}{{ page.language }}{%endif %}" />
   <meta property="og:image" content="https://alphabetify.js.org/thumbnail.png" />
   <meta property="og:description" content="{{ page.description }}" />
 
@@ -78,6 +79,10 @@
     <p class="text-secondary">
       {{ page.tags }}
     </p>
+    <br />
+    <a href="https://paypal.me/pools/c/8pn8fx7AKZ" class="d-flex justify-content-center"><img
+        src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="{{ page.donate }}" /></a>
+    <br /><br />
   </footer>
 
   <script src="bundle.js"></script>
