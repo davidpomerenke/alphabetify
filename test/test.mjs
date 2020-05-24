@@ -16,12 +16,12 @@ alphabetify(text, 'grek-grc', 'en', 0.5, 0.5)
 
 alphabetify(text, 'grek-grc', 'en')
   .then(result => assert.equal(result,
-    'Tell me, O muse, of thαt ingenious hero who trαvelled fαr ἀnd wiδe ἀfter he ἁδ sαckεδ thε fαmous town of Troy. Mαny citiεs δiδ ἑ visit, ἀnδ mαny wεrε θε nαtions wιθ whosε mαnnεrs ἀnδ κustoms ἑ wαs ἀκquαιntεδ; morεovεr ἑ suffεrεδ muκh βι sεα whιλε trιιγγ to sαvε ἱs owν λιfε ἀνδ βrιγγ ἱs μεν sαfελι ὁμε; βut δο whαt ἑ μιγht hε κοuλδ νοt sαvε hις μεν, fορ θει περισhεδ θροuγh θειρ ὀwν σhεερ fολλι ἰν ἐατιγγ θε καττλε ὀφ θε Σουν-γοδ Hιπεριον; σο θε γοδ πρεουεντεδ θεμ φρομ εουερ ῥεαχιγγ ὁμε. Τελλ με, τοο, ἀβοουτ ἀλλ θεσε θιγγς, O δαυχτερ οφ Dιοουε, φρομ ὀυχατσοεουερ σοουρκε ἰοου μει κνοου θεμ.'))
+    'Tell me, O muse, of thαt ingenious hero who trαvelled fαr ἀnd wide ἀfter he ἁd sαckeδ the fαmous town of Troy. Mαny citiεs δiδ ἑ visit, ἀnδ mαny wεrε thε nαtions wiθ whosε mαnnεrs ἀnδ customs ἑ wαs ἀcquαιntεδ; morεovεr ἑ suffεrεδ muκh βι sεα whιλε trιιγγ to sαvε ἱs own λιfε ἀνδ βrιγγ ἱs μεν sαfελι hoμε; βut δο whαt ἑ μιγht hε κοuλδ νοt sαvε hις μεν, fορ θει περισhεδ θροuγh θειρ ὀwν σhεερ fολλι ἰν ἐατιγγ θε καττλε ὀφ θε Σουν-γοδ Hιπεριον; σο θε γοδ πρεουεντεδ θεμ φρομ εουερ ῥεαχιγγ ὁμε. Τελλ με, τοο, ἀβοουτ ἀλλ θεσε θιγγς, O δαυχτερ οφ Dιοουε, φρομ ὀυχατσοεουερ σοουρκε ἰοου μει κνοου θεμ.'))
   .catch(e => console.log(e))
 
 alphabetify(text, 'grek-el', 'en')
   .then(result => assert.equal(result,
-    'Tell me, O muse, of thαt ingenious hero who trαβelled fαr αnd wiδe αfter he hαδ sαckεδ thε fαmous town of Troy. Mαny citiεs δiδ hε βisit, αnδ mαny wεrε θε nαtions wιθ whosε mαnnεrs αnδ κustoms hε wαs ακquαιntεδ; morεoβεr hε suffεrεδ muκh bι sεα whιλε trιιγγ to sαβε hιs owν ληfε ανδ brιγγ hιs μεν sαfελι hομε; but δο whαt hε μιγt hε κοuλδ νοt sαβε hις μεν, fορ θει περισhεδ θροuγ θειρ οwν σhεερ fολλι ιν εατιγγ θε καττλε οφ θε Σουν-γοδ Χιπεριον; σο θε γοδ πρεβεντεδ θεμ φρομ εβερ ρεαχιγγ χομε. Τελλ με, τοο, αμποουτ αλλ θεσε θιγγς, O δαουγτερ οφ Δζοβε, φρομ ουχατσοεβερ σοουρκε ιοου μει κνοου θεμ.'))
+    'Tell me, O muse, of thαt ingenious hero who trαβelled fαr αnd wide αfter he hαd sαckeδ the fαmous town of Troy. Mαny citiεs δiδ hε βisit, αnδ mαny wεrε thε nαtions wiθ whosε mαnnεrs αnδ customs hε wαs αcquαιntεδ; morεoβεr hε suffεrεδ muκh mπι sεα whιλε trιιγγ to sαβε hιs own ληfε ανδ μπrιγγ hιs μεν sαfελι hoμε; μπut δο whαt hε μιγt hε κοuλδ νοt sαβε hις μεν, fορ θει περισhεδ θροuγ θειρ οwν σhεερ fολλι ιν εατιγγ θε καττλε οφ θε Σουν-γοδ Χιπεριον; σο θε γοδ πρεβεντεδ θεμ φρομ εβερ ρεαχιγγ χομε. Τελλ με, τοο, αμποουτ αλλ θεσε θιγγς, O δαουγτερ οφ Δζοβε, φρομ ουχατσοεβερ σοουρκε ιοου μει κνοου θεμ.'))
   .catch(e => console.log(e))
 
 alphabetify(text, 'hira', 'en')
