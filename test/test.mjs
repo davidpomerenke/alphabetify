@@ -16,7 +16,7 @@ alphabetify(text, 'grek-grc', 'en', 0.5, 0.5)
 
 alphabetify(text, 'grek-grc', 'en')
   .then(result => assert.equal(result,
-    'Tell me, O muse, of thαt ingenious hero who trαvelled fαr ἀnd wide ἀfter he ἁd sαckeδ the fαmous town of Troy. Mαny citiεs δiδ ἑ visit, ἀnδ mαny wεrε thε nαtions wiθ whosε mαnnεrs ἀnδ customs ἑ wαs ἀcquαιntεδ; morεovεr ἑ suffεrεδ muκh βι sεα whιλε trιιγγ to sαvε ἱs own λιfε ἀnδ βrιγγ ἱs μεn sαfελι ὁμε; βut δο whαt ἑ μιγht hε κοuλδ nοt σαvε hις μεn, fορ θει περισhεδ θροουγh θειρ ὀουn σhεερ φολλι ἰn ἐατιγγ θε καττλε ὀφ θε Σουn-γοδ Hιπεριοn; σο θε γοδ πρεουεnτεδ θεμ φρομ εουερ ῥεαχιγγ ὁμε. Τελλ με, τοο, ἀβοουτ ἀλλ θεσε θιγγς, O δαυχτερ οφ Dιοουε, φρομ ὀυχατσοεουερ σοουρσε ἰοου μει κνοου θεμ.'))
+    'Tell me, O muse, of thαt ingenious hero who trαvelled fαr ἀnd wide ἀfter he ἁd sαckeδ the fαmous town of Troy. Mαny citiεs δiδ ἑ visit, ἀnδ mαny wεrε thε nαtions wiθ whosε mαnnεrs ἀnδ customs ἑ wαs ἀcquαιntεδ; morεovεr ἑ suffεrεδ much βι sεα whιλε trιιγγ to sαvε ἱs own λιfε ἀnδ βrιγγ ἱs μεn sαfελι ὁμε; βut δο whαt ἑ μιγht hε κοuλδ nοt σαvε hις μεn, fορ θει περισhεδ θροουγh θειρ ὀουn σhεερ φολλι ἰn ἐατιγγ θε καττλε ὀφ θε Σουn-γοδ Hιπεριοn; σο θε γοδ πρεουεnτεδ θεμ φρομ εουερ ῥεαχιγγ ὁμε. Τελλ με, τοο, ἀβοουτ ἀλλ θεσε θιγγς, O δαυχτερ οφ Dιοουε, φρομ ὀυχατσοεουερ σοουρσε ἰοου μει κνοου θεμ.'))
   .catch(e => console.log(e))
 
 alphabetify(text, 'grek-el', 'en')
