@@ -11,17 +11,17 @@ const text =
 
 alphabetify(text, 'grek-grc', 'en', 0.5, 0.5)
   .then(result => assert.equal(result,
-    'Tell me, O muse, of that ingenious hero who travelled far and wide after he had sacked the famous town of Troy. Many cities did he visit, and many were the nations with whose manners and customs he was acquainted; moreover he suffered much by sea while trying to save his own life and bring his men safely home; but δο ὀυχατ ἑ μιχτ hε κοουλδ νοτ σαουε hις μεν, φωρ θει περισhεδ θροουχ θειρ ὀουν σhεερ φολλι ἰν ἐατιγγ θε καττλε ὀφ θε Σουν-γοδ Hιπεριον; σο θε γοδ πρεουεντεδ θεμ φρομ εουερ ῥεαχιγγ ὁμε. Τελλ με, τοο, ἀβοουτ ἀλλ θεσε θιγγς, O δαυχτερ οφ Dιοουε, φρομ ὀυχατσοεουερ σοουρσε ἰοου μει κνοου θεμ.'))
+    'Tell me, O muse, of that ingenious hero who travelled far and wide after he had sacked the famous town of Troy. Many cities did he visit, and many were the nations with whose manners and customs he was acquainted; moreover he suffered much by sea while trying to save his own life and bring his men safely home; but δο ὀυχατ ἑ μιχτ hε κοουλδ νοτ σαουε hις μεν, φωρ θει περισhεδ θροουχ θειρ ὀουν σhεερ φολλι ἰν ἐατιγγ θε καττλε ὀφ θε Σουν-γοδ Hιπεριον; σο θε γοδ πρεουεντεδ θεμ φρομ εουερ ῥεατχιγγ ὁμε. Τελλ με, τοο, ἀβοουτ ἀλλ θεσε θιγγς, O δαυχτερ οφ Dιοουε, φρομ ὀυχατσοεουερ σοουρσε ἰοου μει κνοου θεμ.'))
   .catch(e => console.log(e))
 
 alphabetify(text, 'grek-grc', 'en')
   .then(result => assert.equal(result,
-    'Tell me, O muse, of thαt ingenious hero who trαvelled fαr ἀnd wide ἀfter he ἁd sαckeδ the fαmous town of Troy. Mαny citiεs δiδ ἑ visit, ἀnδ mαny wεrε thε nαtions wiθ whosε mαnnεrs ἀnδ customs ἑ wαs ἀcquαιntεδ; morεovεr ἑ suffεrεδ much βι sεα whιλε trιιγγ to sαvε ἱs own λιfε ἀnδ βrιγγ ἱs μεn sαfελι ὁμε; βut δο whαt ἑ μιγht hε κοuλδ nοt σαvε hις μεn, fορ θει περισhεδ θροουγh θειρ ὀουn σhεερ φολλι ἰn ἐατιγγ θε καττλε ὀφ θε Σουn-γοδ Hιπεριοn; σο θε γοδ πρεουεnτεδ θεμ φρομ εουερ ῥεαχιγγ ὁμε. Τελλ με, τοο, ἀβοουτ ἀλλ θεσε θιγγς, O δαυχτερ οφ Dιοουε, φρομ ὀυχατσοεουερ σοουρσε ἰοου μει κνοου θεμ.'))
+    'Tell me, O muse, of thαt ingenious hero who trαvelled fαr ἀnd wide ἀfter he ἁd sαckeδ the fαmous town of Troy. Mαny citiεs δiδ ἑ visit, ἀnδ mαny wεrε thε nαtions wiθ whosε mαnnεrs ἀnδ customs ἑ wαs ἀcquαιntεδ; morεovεr ἑ suffεrεδ much βι sεα whιλε trιιγγ to sαvε ἱs own λιfε ἀnδ βrιγγ ἱs μεn sαfελι ὁμε; βut δο whαt ἑ μιγht hε κοuλδ nοt σαvε hις μεn, fορ θει περισhεδ θροουγh θειρ ὀουn σhεερ φολλι ἰn ἐατιγγ θε καττλε ὀφ θε Σουn-γοδ Hιπεριοn; σο θε γοδ πρεουεnτεδ θεμ φρομ εουερ ῥεατχιγγ ὁμε. Τελλ με, τοο, ἀβοουτ ἀλλ θεσε θιγγς, O δαυχτερ οφ Dιοουε, φρομ ὀυχατσοεουερ σοουρσε ἰοου μει κνοου θεμ.'))
   .catch(e => console.log(e))
 
 alphabetify(text, 'grek-el', 'en')
   .then(result => assert.equal(result,
-    'Tell me, O muse, of thαt ingenious hero who trαβelled fαr αnd wide αfter he hαd sαckeδ the fαmous town of Troy. Mαny citiεs δiδ hε βisit, αnδ mαny wεrε thε nαtions wiθ whosε mαnnεrs αnδ customs hε wαs αcquαιntεδ; morεoβεr hε suffεrεδ muκh mπι sεα whιλε trιιγγ to sαβε hιs own ληfε αnδ μπrιγγ hιs μεn sαfελι hομε; μπut δο whαt hε μιγt hε κοuλδ nοt σαβε hις μεn, fορ θει περισhεδ θροουγ θειρ οουn σhεερ φολλι ιn εατιγγ θε καττλε οφ θε Σουn-γοδ Χιπεριοn; σο θε γοδ πρεβεnτεδ θεμ φρομ εβερ ρεαχιγγ χομε. Τελλ με, τοο, αμποουτ αλλ θεσε θιγγς, O δαουγτερ οφ Δζοβε, φρομ ουχατσοεβερ σοουρσε ιοου μει κνοου θεμ.'))
+    'Tell me, O muse, of thαt ingenious hero who trαβelled fαr αnd wide αfter he hαd sαckeδ the fαmous town of Troy. Mαny citiεs δiδ hε βisit, αnδ mαny wεrε thε nαtions wiθ whosε mαnnεrs αnδ customs hε wαs αcquαιntεδ; morεoβεr hε suffεrεδ mutζ mπι sεα whιλε trιιγγ to sαβε hιs own ληfε αnδ μπrιγγ hιs μεn sαfελι hομε; μπut δο whαt hε μιγt hε κοuλδ nοt σαβε hις μεn, fορ θει περισhεδ θροουγ θειρ οουn σhεερ φολλι ιn εατιγγ θε καττλε οφ θε Σουn-γοδ Χιπεριοn; σο θε γοδ πρεβεnτεδ θεμ φρομ εβερ ρεατζιγγ χομε. Τελλ με, τοο, αμποουτ αλλ θεσε θιγγς, O δαουγτερ οφ Δζοβε, φρομ ουχατσοεβερ σοουρσε ιοου μει κνοου θεμ.'))
   .catch(e => console.log(e))
 
 alphabetify(text, 'hira', 'en')
