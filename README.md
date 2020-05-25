@@ -135,3 +135,10 @@ The long form is a pair `[a, b]` where `alphabetify` will apply `text.replace(ne
   Deriving phonetics from written input text works to different degrees for different input languages. While in some rough rules can be established for German, there often appear to be almost no rules for English. That is sad.
 
 - It is aimed to achieve a balance between keeping the rule set small, and introducing special phonetics-related concepts in a sufficiently accurate way.
+
+## Feedback
+
+The preferred way of contributing is via issues & pull requests in this repo. I also made some Reddit threads to get in feedback from non-coders:
+
+- [Ancient Greek](https://www.reddit.com/r/AncientGreek/comments/gpgkul/made_this_free_tool_for_intuitively_learning_the/)
+- [Modern Greek](https://www.reddit.com/r/GREEK/comments/gpgxm6/made_this_free_tool_for_intuitively_learning_the/)
