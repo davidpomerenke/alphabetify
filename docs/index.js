@@ -3,6 +3,7 @@ const buildDir =
 const select = document.getElementById('alphabet')
 const source = window.document.getElementById('source')
 const target = document.getElementById('target')
+select.selectedIndex = 0
 const load = () => {
   const alphabetCode = select.options[select.selectedIndex].value
   // do nothing if no alphabet is selected
