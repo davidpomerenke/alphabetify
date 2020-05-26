@@ -18,7 +18,7 @@
   <meta property="og:title" content="{{ page.title }}" />
   <meta property="og:url"
     content="https://alphabetify.js.org/{% if page.language != 'en' %}{{ page.language }}{%endif %}" />
-  <meta property="og:image" content="https://alphabetify.js.org/thumbnail.png" />
+  <meta property="og:image" content="https://alphabetify.js.org/img/thumbnail.png" />
   <meta property="og:description" content="{{ page.description }}" />
 
   <link rel="stylesheet" href="bootstrap.min.css" />
@@ -67,9 +67,6 @@
     </select><br /><br />
     <textarea id="target" readonly autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
       class="form-control" style="min-height: 200px"></textarea><br />
-  </main>
-
-  <footer>
     <p>
       {{ page.note }}
     </p>
@@ -80,8 +77,18 @@
       {{ page.tags }}
     </p>
     <br />
-    <a href="https://paypal.me/pools/c/8pn8fx7AKZ" class="d-flex justify-content-center"><img
+  </main>
+
+  <footer>
+    <a href="https://paypal.me/pools/c/8pn8fx7AKZ" target="_blank" class="d-flex justify-content-center"><img
         src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="{{ page.donate }}" /></a>
+    <br /><br />
+    <div class="d-flex justify-content-center">
+      <a href="mailto:David Pomerenke<david@lernplattform.wiki>" target="_blank"><img src="img/mail.svg" alt="Mail" style="padding: 12px" /></a>
+      <a href="https://twitter.com/davidpomerenke/status/1264355475782500353" target="_blank"><img src="img/twitter.svg" alt="Twitter" style="padding: 12px" /></a>
+      <a href="https://linkedin.com/in/davidpomerenke" target="_blank"><img src="img/linkedin.svg" alt="Linkedin" style="padding: 12px" /></a>
+      <a href="https://github.com/davidpomerenke/alphabetify" target="_blank"><img src="img/github.svg" alt="Github" style="padding: 12px" /></a>
+    </div>
     <br /><br />
   </footer>
 
