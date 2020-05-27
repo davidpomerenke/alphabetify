@@ -66,11 +66,11 @@ If the original language is unspecified, English will be assumed.
 
 **`pre`** *optional*
 
-The number 0 ≤ n < 1 specifying the proportion of text at the beginning of the `text` string which should not be transliterated at all. 0 by default.
+The number 0 ≤ m ≤ (1 - n) specifying the proportion of text at the beginning of the `text` string which should not be transliterated at all. 0 by default.
 
 **`post`** *optional*
 
-The number 0 ≤ n < 1 specifying the proportion of text at the end of the `text` string which should not be transliterated at all. 0 by default.
+The number 0 ≤ n ≤ (1 - m) specifying the proportion of text at the end of the `text` string which should be transliterated completely. 0 by default.
 
 ### Return value
 
