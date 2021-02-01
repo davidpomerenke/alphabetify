@@ -3,6 +3,7 @@
 [![NPM version](https://img.shields.io/npm/v/alphabetify.svg)](https://www.npmjs.com/package/alphabetify)
 [![Node CI](https://github.com/davidpomerenke/alphabetify/workflows/Node%20CI/badge.svg)](https://github.com/davidpomerenke/alphabetify/actions?query=workflow%3A%22Node+CI%22)
 [![codecov](https://codecov.io/gh/davidpomerenke/alphabetify/branch/master/graph/badge.svg)](https://codecov.io/gh/davidpomerenke/alphabetify)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fdavidpomerenke%2Falphabetify.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fdavidpomerenke%2Falphabetify?ref=badge_shield)
 
 Alphabetify makes learning new alphabets easy.
 Copypaste any text –
@@ -142,3 +143,7 @@ The preferred way of contributing is via issues & pull requests in this repo. I 
 
 - [Ancient Greek](https://www.reddit.com/r/AncientGreek/comments/gpgkul/made_this_free_tool_for_intuitively_learning_the/)
 - [Modern Greek](https://www.reddit.com/r/GREEK/comments/gpgxm6/made_this_free_tool_for_intuitively_learning_the/)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fdavidpomerenke%2Falphabetify.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fdavidpomerenke%2Falphabetify?ref=badge_large)
