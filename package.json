@@ -25,9 +25,9 @@
     "node": ">= 13.0"
   },
   "devDependencies": {
-    "c8": "^7.3.0",
-    "codecov": "^3.7.2",
-    "webpack": "^4.44.1",
+    "c8": "^7.5.0",
+    "codecov": "^3.8.1",
+    "webpack": "^4.46.0",
     "webpack-cli": "^3.3.12"
   }
 }
