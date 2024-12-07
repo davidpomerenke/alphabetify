@@ -26,7 +26,7 @@ alphabetify(text, 'grek-el', 'en')
 
 alphabetify(text, 'hira', 'en')
   .then(result => assert.equal(result,
-    'Tell me, O mうsえ, おf thあt いngえnいおうs hえrお whお trあvえllえd fあr あnd wいdえ あftえr hえ hあd さcけd thえ fあmおうす tおwn おf Trおい. Mあnい cいtいえす じd hえ vいしt, あnd mあnい wえrえ せ nあといおnす wいとh whおせ mあnnえrす あnど cうすとmす hえ wあす あcqうあいnてど; mおrえおvえr hえ すっふえrえど mうし bい せあ wひlえ とrいいnぐ と さべ ひす おwn lいふえ あnど ぶrいnぐ ひす むえn さふえlい ほめ; ぶと ど wはと へ みぐhと へ cおうるど のと さべ ひす めん, ふおる せぃ ぺりしえど と一ろうぐ一 せいる おwん しえぃる ふおるるい いん えあといんぐ せ cあっとれ おふ せ すん-ごど 一いぺりおん; そ せ ごど ぷれべんてど せむ ふろむ えべる れあしんぐ ほめ. てるる め, とお, あぼうと あるる せせ ふぃんぐす, O だうぐ一てる おふ じょべ, ふろむ wはとそえべる そうるcえ よう まい くのw せむ.'))
+    'Tell me, O mうsえ, おf thあt いngえnいおうs hえrお whお trあvえllえd fあr あnd wいdえ あftえr hえ hあd さcけd thえ fあmおうす tおwn おf Trおい. Mあnい cいtいえす じd hえ vいしt, あnd mあnい wえrえ せ nあといおnす wいとh whおせ mあnnえrす あnど cうすとmす hえ wあす あcくあいnてど; mおrえおvえr hえ すっふえrえど mうし bい せあ wひlえ とrいいnぐ と さべ ひす おwn lいふえ あnど ぶrいnぐ ひす むえn さふえlい ほめ; ぶと ど wはと へ みぐhと へ cおうるど のと さべ ひす めん, ふおる せぃ ぺりしえど と一ろうぐ一 せいる おwん しえぃる ふおるるい いん えあといんぐ せ cあっとれ おふ せ すん-ごど 一いぺりおん; そ せ ごど ぷれべんてど せむ ふろむ えべる れあしんぐ ほめ. てるる め, とお, あぼうと あるる せせ ふぃんぐす, O だうぐ一てる おふ じょべ, ふろむ wはとそえべる そうるcえ よう まい くのw せむ.'))
   .catch(e => console.log(e))
 
 alphabetify(text, 'kana', 'en')
