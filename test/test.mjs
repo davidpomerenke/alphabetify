@@ -31,10 +31,15 @@ alphabetify(text, 'hira', 'en')
 
 alphabetify(text, 'kana', 'en')
   .then(result => assert.equal(result,
-    'Tell me, O mウsエ, オf thアt イngエnイオウs hエrオ whオ trアvエllエd fアr アnd wイdエ アftエr hエ hアd サcケd thエ fアmオウス tオwn オf Trオイ. Mアnイ cイtイエス ジd hエ vイシt, アnd mアnイ wエrエ セ nアトイオnス wイトh whオセ mアnnエrス アnド cウストmス hエ wアス アcqウアイnテド; mオrエオvエr hエ スッフエrエド mウシ bイ セア wヒlエ トrイイnグ ト サベ ヒス オwn lイフエ アnド ブrイnグ ヒス ムエn サフエlイ ホメ; ブト ド wハト ヘ ミグhト ヘ cオウルド ノト サベ ヒス メン, フオル セィ ペリシエド ト一ロウグ一 セイル オwン シエィル フオルルイ イン エアトイング セ cアットレ オフ セ スン-ゴド 一イペリオン; ソ セ ゴド プレベンテド セム フロム エベル レアシング ホメ. テルル メ, トオ, アボウト アルル セセ フィングス, O ダウグ一テル オフ ジョベ, フロム wハトソエベル ソウルcエ ヨウ マイ クノw セム.'))
+    'Tell me, O mウsエ, オf thアt イngエnイオウs hエrオ whオ trアvエllエd fアr アnd wイdエ アftエr hエ hアd サcケd thエ fアmオウス tオwn オf Trオイ. Mアnイ cイtイエス ジd hエ vイシt, アnd mアnイ wエrエ セ nアトイオnス wイトh whオセ mアnnエrス アnド cウストmス hエ wアス アcクアイnテド; mオrエオvエr hエ スッフエrエド mウシ bイ セア wヒlエ トrイイnグ ト サベ ヒス オwn lイフエ アnド ブrイnグ ヒス ムエn サフエlイ ホメ; ブト ド wハト ヘ ミグhト ヘ cオウルド ノト サベ ヒス メン, フオル セィ ペリシエド ト一ロウグ一 セイル オwン シエィル フオルルイ イン エアトイング セ cアットレ オフ セ スン-ゴド 一イペリオン; ソ セ ゴド プレベンテド セム フロム エベル レアシング ホメ. テルル メ, トオ, アボウト アルル セセ フィングス, O ダウグ一テル オフ ジョベ, フロム wハトソエベル ソウルcエ ヨウ マイ クノw セム.'))
   .catch(e => console.log(e))
 
 alphabetify(text, 'cyrl-ru', 'en')
   .then(result => assert.equal(result,
     'Tell me, O muse, of thаt ingenious hero вo trавelled fаr аnd вiдe аfter he hад sаckeд the fаmous toвn of Troy. Mаny cities дiд he вisit, аnд mаny вere зe nаtions вiз вose mаnners аnд кustoms he ваs акquайnteд; мoreoвer he suffereд мuкh бy seа вiлe tryйнг to sавe his oвн лife анд брiнг hiс мeн саfeлy hoмe; бuт дo ват he мiгhт he кoулд нoт савe hiс мeн, фнр зeй пeрiсheд зрoугh зeйр oвн шир фoллy iн eатiнг зe каттлe oф зe Сун-гoд Hyпэрыoн; сo зэ гoд прэвэнтэд зэм фрoм эвэр рэачынг hoмэ. Тэлл мэ, ту, абoут алл зэсэ зынгс, O даугhтэр oф Ёвэ, фрoм вацoэвэр сoуркэ ёу май кнoв зэм.'))
+  .catch(e => console.log(e))
+
+
+alphabetify('bequem', 'kana', 'de', 0, 1)
+  .then(result => assert.equal(result, 'ベクエム'))
   .catch(e => console.log(e))
