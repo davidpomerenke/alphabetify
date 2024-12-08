@@ -12,7 +12,10 @@
     "learning",
     "education"
   ],
-  "repository": "git://github.com/davidpomerenke/alphabetify.git",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/davidpomerenke/alphabetify.git"
+  },
   "main": "lib/index.mjs",
   "scripts": {
     "start": "cd docs && bundle exec jekyll serve",
