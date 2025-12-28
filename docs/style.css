@@ -160,25 +160,63 @@ a:hover {
   color: #fff;
 }
 
-/* Output textarea in bottom-right */
-.output-box {
+/* Output panel in bottom-right */
+.output-panel {
   grid-column: 3;
   grid-row: 2;
+  position: relative;
+}
+
+.output-actions {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  gap: 0.25rem;
+}
+
+.output-btn {
+  padding: 0.4rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.output-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.output-btn svg {
+  display: block;
+}
+
+.output-box {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 2.5rem;
 }
 
 textarea {
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 0.9rem;
   width: 100%;
   height: 100%;
-  padding: 0.875rem 1rem;
+  padding: 0.75rem 1rem;
   border: 1px solid var(--border);
   border-radius: 6px;
   background: var(--surface);
   color: var(--text);
   transition: border-color 0.15s ease;
-  min-height: 280px;
+  min-height: 380px;
   resize: vertical;
+  line-height: 1.6;
 }
 
 textarea:focus {
@@ -269,7 +307,7 @@ footer {
     justify-content: flex-start;
   }
   
-  .output-box {
+  .output-panel {
     grid-column: 1 / 3;
     grid-row: 3;
   }
@@ -278,4 +316,66 @@ footer {
     min-height: 180px;
     height: auto;
   }
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal {
+  background: var(--bg);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 1100px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.modal-close {
+  padding: 0.4rem;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close:hover {
+  color: var(--text);
+  background: var(--surface);
+}
+
+.modal-content {
+  padding: 1.5rem 2rem 2rem;
+  overflow-y: auto;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  color: var(--text);
 }

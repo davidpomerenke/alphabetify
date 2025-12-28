@@ -88,6 +88,71 @@ async function init() {
   if (firstPill) {
     firstPill.click()
   }
+  
+  // Copy to clipboard
+  const copyBtn = document.getElementById('copy-btn')
+  const copyIcon = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>'
+  const checkIcon = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>'
+  copyBtn.onclick = async () => {
+    const text = target.value
+    if (!text) return
+    try {
+      await navigator.clipboard.writeText(text)
+      copyBtn.innerHTML = checkIcon
+      copyBtn.style.color = 'var(--accent)'
+      setTimeout(() => {
+        copyBtn.innerHTML = copyIcon
+        copyBtn.style.color = ''
+      }, 1500)
+    } catch (err) {
+      console.error('Copy failed:', err)
+    }
+  }
+  
+  // Download as text file
+  const downloadBtn = document.getElementById('download-btn')
+  downloadBtn.onclick = () => {
+    const text = target.value
+    if (!text) return
+    const blob = new Blob([text], { type: 'text/plain;charset=utf-8' })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = `alphabetify-${selectedAlphabet || 'text'}.txt`
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+    URL.revokeObjectURL(url)
+  }
+  
+  // Expand modal
+  const expandBtn = document.getElementById('expand-btn')
+  const modalOverlay = document.getElementById('modal-overlay')
+  const modalContent = document.getElementById('modal-content')
+  const modalClose = document.getElementById('modal-close')
+  
+  expandBtn.onclick = () => {
+    const text = target.value
+    if (!text) return
+    modalContent.textContent = text
+    modalOverlay.classList.add('active')
+    document.body.style.overflow = 'hidden'
+  }
+  
+  const closeModal = () => {
+    modalOverlay.classList.remove('active')
+    document.body.style.overflow = ''
+  }
+  
+  modalClose.onclick = closeModal
+  modalOverlay.onclick = (e) => {
+    if (e.target === modalOverlay) closeModal()
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
+      closeModal()
+    }
+  })
 }
 
 init()

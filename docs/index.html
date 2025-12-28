@@ -39,7 +39,20 @@
       <textarea id="source" class="input-box" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
       <div class="flow-arrow" aria-hidden="true">→</div>
       <div class="alphabet-pills" id="alphabet-pills" role="radiogroup" aria-label="Target alphabet"></div>
-      <textarea id="target" class="output-box" readonly autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+      <div class="output-panel">
+        <textarea id="target" class="output-box" readonly autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+        <div class="output-actions">
+          <button type="button" class="output-btn" id="expand-btn" title="Expand" aria-label="Expand to full view">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+          </button>
+          <button type="button" class="output-btn" id="copy-btn" title="Copy to clipboard" aria-label="Copy to clipboard">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          </button>
+          <button type="button" class="output-btn" id="download-btn" title="Download as text file" aria-label="Download as text file">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </button>
+        </div>
+      </div>
     </div>
     
     <p class="note" id="note"></p>
@@ -62,6 +75,18 @@
       </a>
     </div>
   </footer>
+
+  <!-- Modal for expanded view -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal">
+      <div class="modal-header">
+        <button type="button" class="modal-close" id="modal-close" aria-label="Close">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+  </div>
 
   <script type="module" src="./main.js"></script>
 
