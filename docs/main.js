@@ -62,18 +62,28 @@ async function init() {
     pill.setAttribute('aria-checked', 'false')
     
     pill.onclick = () => {
-      // Update selection
-      pillsContainer.querySelectorAll('.alphabet-pill').forEach(p => {
-        p.classList.remove('selected')
-        p.setAttribute('aria-checked', 'false')
-      })
-      pill.classList.add('selected')
-      pill.setAttribute('aria-checked', 'true')
-      selectedAlphabet = code
-      load(code)
+      selectAlphabet(code)
+      // Update URL hash
+      history.replaceState(null, '', `#${code}`)
     }
     
     pillsContainer.appendChild(pill)
+  }
+  
+  // Select an alphabet by code
+  const selectAlphabet = (code) => {
+    const pill = pillsContainer.querySelector(`[data-code="${code}"]`)
+    if (!pill) return
+    
+    // Update selection UI
+    pillsContainer.querySelectorAll('.alphabet-pill').forEach(p => {
+      p.classList.remove('selected')
+      p.setAttribute('aria-checked', 'false')
+    })
+    pill.classList.add('selected')
+    pill.setAttribute('aria-checked', 'true')
+    selectedAlphabet = code
+    load(code)
   }
   
   // Reload on input change
@@ -83,11 +93,26 @@ async function init() {
     }
   }
   
-  // Select Ancient Greek by default
-  const firstPill = pillsContainer.querySelector('.alphabet-pill')
-  if (firstPill) {
-    firstPill.click()
+  // Select alphabet from URL hash, or default to first (Ancient Greek)
+  const hashAlphabet = window.location.hash.slice(1)
+  const validCodes = Object.keys(t.alphabets)
+  if (hashAlphabet && validCodes.includes(hashAlphabet)) {
+    selectAlphabet(hashAlphabet)
+  } else {
+    const firstPill = pillsContainer.querySelector('.alphabet-pill')
+    if (firstPill) {
+      selectAlphabet(firstPill.dataset.code)
+      history.replaceState(null, '', `#${firstPill.dataset.code}`)
+    }
   }
+  
+  // Handle browser back/forward
+  window.addEventListener('hashchange', () => {
+    const newHash = window.location.hash.slice(1)
+    if (newHash && validCodes.includes(newHash) && newHash !== selectedAlphabet) {
+      selectAlphabet(newHash)
+    }
+  })
   
   // Copy to clipboard
   const copyBtn = document.getElementById('copy-btn')
