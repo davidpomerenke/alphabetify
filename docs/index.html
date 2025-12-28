@@ -20,61 +20,50 @@
   <meta property="og:image" content="https://alphabetify.js.org/img/thumbnail.png" />
   <meta property="og:description" id="og-description" content="" />
 
-  <link rel="stylesheet" href="./bootstrap.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Noto+Sans+JP:wght@400&family=Noto+Sans+Greek:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
-<body class="container" style="max-width: 75ch">
+<body>
+  <nav id="lang-nav" class="lang-nav"></nav>
 
   <header>
-    <br />
-    <nav id="lang-nav"></nav>
-    <br />
-    <h1 class="display-4" id="slogan"></h1>
+    <h1 id="slogan"></h1>
     <div id="teaser"></div>
   </header>
 
   <main>
-    <textarea id="source" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
-      class="form-control" style="min-height: 200px"></textarea><br />
-    <select id="alphabet" class="custom-select">
-      <option hidden id="select-placeholder"></option>
-      <option disabled id="select-disabled"></option>
-    </select><br /><br />
-    <textarea id="target" readonly autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
-      class="form-control" style="min-height: 200px"></textarea><br />
-    <p id="note"></p>
+    <div class="transform-container">
+      <textarea id="source" class="input-box" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+      <div class="flow-arrow" aria-hidden="true">→</div>
+      <div class="alphabet-pills" id="alphabet-pills" role="radiogroup" aria-label="Target alphabet"></div>
+      <textarea id="target" class="output-box" readonly autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    </div>
+    
+    <p class="note" id="note"></p>
     <p id="contributing"></p>
-    <p class="text-secondary" id="tags"></p>
-    <br />
   </main>
 
   <footer>
-    <a href="https://paypal.me/pools/c/8pn8fx7AKZ" target="_blank" class="d-flex justify-content-center">
-      <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" id="donate-img" alt="Donate" />
-    </a>
-    <br /><br />
-    <div class="d-flex justify-content-center">
-      <a href="mailto:David Pomerenke<david@lernplattform.wiki>" target="_blank">
-        <img src="./img/mail.svg" alt="Mail" style="padding: 12px" />
+    <div class="social">
+      <a href="mailto:davidpomerenke@mailbox.org" target="_blank" aria-label="Email">
+        <img src="./img/mail.svg" alt="Mail" />
       </a>
-      <a href="https://twitter.com/davidpomerenke/status/1264355475782500353" target="_blank">
-        <img src="./img/twitter.svg" alt="Twitter" style="padding: 12px" />
+      <a href="https://x.com/davidpomerenke" target="_blank" aria-label="X">
+        <img src="./img/x.svg" alt="X" />
       </a>
-      <a href="https://linkedin.com/in/davidpomerenke" target="_blank">
-        <img src="./img/linkedin.svg" alt="Linkedin" style="padding: 12px" />
+      <a href="https://github.com/davidpomerenke/alphabetify" target="_blank" aria-label="GitHub">
+        <img src="./img/github.svg" alt="Github" />
       </a>
-      <a href="https://github.com/davidpomerenke/alphabetify" target="_blank">
-        <img src="./img/github.svg" alt="Github" style="padding: 12px" />
+      <a href="https://linkedin.com/in/davidpomerenke" target="_blank" aria-label="LinkedIn">
+        <img src="./img/linkedin.svg" alt="Linkedin" />
       </a>
     </div>
-    <br /><br />
   </footer>
 
   <script type="module" src="./main.js"></script>
-  <script>
-    !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.async = !0, p.src = s.api_host + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
-    posthog.init('mrAhzb0wDWIXVEe8TUSNjhhISgdsP-ui8uCJCiHi3nI', { api_host: 'https://alphabetify-posthog.herokuapp.com' })
-  </script>
 
 </body>
 

@@ -49,12 +49,13 @@ jobs:
         run: npm ci
       - name: Build with Vite
         run: npm run build
-      - name: Create /de route
+      - name: Copy static assets
         run: |
           mkdir -p docs/dist/de
           cp docs/dist/index.html docs/dist/de/index.html
-      - name: Copy CNAME
-        run: cp docs/CNAME docs/dist/
+          cp -r docs/i18n docs/dist/
+          cp -r docs/img docs/dist/
+          cp docs/CNAME docs/dist/
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

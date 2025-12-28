@@ -5,16 +5,13 @@
   "teaser": "<p>Alphabetify makes learning new alphabets easy. Copypaste any text to the upper text area – the breaking news, your favourite book, or a piece of homework. Alphabetify will transform the text for you. It starts with all symbols in your native alphabet, then slowly introduces more and more foreign characters. You will get used to them and learn the alphabet without any effort.</p><p>Try it!</p>",
   "select": "Select target alphabet",
   "alphabets": {
-    "grek-grc": "Greek (Ancient)",
-    "grek-el": "Greek (Modern)",
-    "hira": "Japanese Hiragana",
-    "kana": "Japanese Katakana",
+    "grek-grc": "Ancient Greek",
+    "grek-el": "Modern Greek",
+    "hira": "Hiragana",
+    "kana": "Katakana",
     "cyrl-ru": "Russian"
   },
   "note": "Note: The sample text is very short for demonstration purposes. You should probably choose a longer text, so that you can slowly get used to every single new letter.",
-  "contributing": "If you would like to contribute, for example, by pointing out transliteration mistakes or improvements, you are very welcome to do so <a href=\"https://github.com/davidpomerenke/alphabetify\">on Github</a> or <a href=\"mailto:David Pomerenke<david@lernplattform.wiki>\">via mail</a>. Feedback from language teachers on how useful the tool is actually in a real-world environment would also be very appreciated.",
-  "tags": "#alphabet #language #language-learning #transliteration #greek-alphabet #cyrillic #hiragana #katakana",
-  "donate": "Donate",
+  "contributing": "If you would like to contribute, for example, by pointing out transliteration mistakes or improvements, you are very welcome to do so <a href=\"https://github.com/davidpomerenke/alphabetify\">on Github</a> or <a href=\"mailto:David Pomerenke<davidpomerenke@mailbox.org>\">via email</a>. Feedback from language teachers on how useful the tool is actually in a real-world environment would also be very appreciated.",
   "sample": "Shall I compare thee to a summer's day?\nThou art more lovely and more temperate:\nRough winds do shake the darling buds of May,\nAnd summer's lease hath all too short a date:\nSometime too hot the eye of heaven shines,\nAnd often is his gold complexion dimm'd;\nAnd every fair from fair sometime declines,\nBy chance, or nature's changing course, untrimm'd;\nBut thy eternal summer shall not fade\nNor lose possession of that fair thou ow'st;\nNor shall Death brag thou wander'st in his shade,\nWhen in eternal lines to time thou grow'st;\nSo long as men can breathe or eyes can see,\nSo long lives this, and this gives life to thee."
 }
-
