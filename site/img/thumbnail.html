@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      width: 1200px;
+      height: 630px;
+      background: linear-gradient(135deg, #0d2e24 0%, #1a5f4a 50%, #2d8b6a 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Noto Sans', system-ui, sans-serif;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    /* Subtle glow effects */
+    body::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(ellipse 500px 350px at 20% 80%, rgba(78, 204, 163, 0.2) 0%, transparent 70%),
+        radial-gradient(ellipse 400px 250px at 85% 15%, rgba(255,255,255,0.1) 0%, transparent 60%);
+    }
+    
+    .letters {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      font-size: 80px;
+      font-weight: 600;
+      color: white;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 50px;
+    }
+    
+    .letter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 110px;
+      height: 110px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    }
+    
+    .letter.source {
+      opacity: 0.7;
+      background: rgba(255,255,255,0.05);
+    }
+    
+    .letter.target {
+      background: rgba(78, 204, 163, 0.2);
+      color: #b8f0dd;
+      border-color: rgba(184, 240, 221, 0.3);
+    }
+    
+    .arrow {
+      font-size: 40px;
+      opacity: 0.6;
+      color: #4ecca3;
+      margin: 0 8px;
+    }
+    
+    .wordmark {
+      font-size: 56px;
+      font-weight: 600;
+      color: white;
+      letter-spacing: 0.01em;
+      position: relative;
+      z-index: 1;
+      text-shadow: 0 2px 30px rgba(0,0,0,0.3);
+    }
+    
+    .tagline {
+      margin-top: 16px;
+      font-size: 24px;
+      color: rgba(255,255,255,0.6);
+      font-weight: 400;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Noto+Sans+JP&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="letters">
+    <div class="letter source">A</div>
+    <span class="arrow">→</span>
+    <div class="letter target">α</div>
+    <div class="letter target">あ</div>
+    <div class="letter target">ア</div>
+    <div class="letter target">아</div>
+  </div>
+  
+  <div class="wordmark">Alphabetify</div>
+  <div class="tagline">Learn alphabets naturally</div>
+</body>
+</html>
