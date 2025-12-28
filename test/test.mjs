@@ -26,20 +26,80 @@ alphabetify(text, 'grek-el', 'en')
 
 alphabetify(text, 'hira', 'en')
   .then(result => assert.equal(result,
-    'Tell me, O mうsえ, おf thあt いngえnいおうs hえrお whお trあvえllえd fあr あnd wいdえ あftえr hえ hあd さcけd thえ fあmおうす tおwn おf Trおい. Mあnい cいtいえす じd hえ vいしt, あnd mあnい wえrえ せ nあといおnす wいとh whおせ mあnnえrす あnど cうすとmす hえ wあす あcくあいnてど; mおrえおvえr hえ すっふえrえど mうし bい せあ wひlえ とrいいnぐ と さべ ひす おwn lいふえ あnど ぶrいnぐ ひす むえn さふえlい ほめ; ぶと ど wはと へ みぐhと へ cおうるど のと さべ ひす めん, ふおる せぃ ぺりしえど と一ろうぐ一 せいる おwん しえぃる ふおるるい いん えあといんぐ せ cあっとれ おふ せ すん-ごど 一いぺりおん; そ せ ごど ぷれべんてど せむ ふろむ えべる れあしんぐ ほめ. てるる め, とお, あぼうと あるる せせ ふぃんぐす, O だうぐ一てる おふ じょべ, ふろむ wはとそえべる そうるcえ よう まい くのw せむ.'))
+    'Tell me, O mうsえ, おf thあt いngえnいおうs hえrお whお trあvえllえd fあr あnd wいdえ あftえr hえ hあd さcけd thえ fあmおうす tおwn おf Trおい. Mあnい cいtいえす じd hえ vいしt, あnd mあnい wえrえ せ nあちおnす wいとh whおせ mあnnえrす あnど cうすとmす hえ wあす あcくあいnてど; mおrえおvえr hえ すっふえrえど mうち bい せあ wひlえ とrいいnぐ と さべ ひす おwn lいふえ あnど ぶrいnぐ ひす むえn さふえlい ほめ; ぶと ど wはと へ みぐhと へ cおうるど のと さべ ひす めん, ふおる とーえい ぺりしえど とーろうぐー せいる おwん しいーる ふおるるい いん えあちんぐ せ cあっとれ おふ せ すん-ごど ーいぺりおん; そ せ ごど ぷれべんてど せむ ふろむ えべる れあちんぐ ほめ. てるる め, とお, あぼうと あるる せせ ふぃんぐす, O だうぐーてる おふ じょべ, ふろむ wはとそえべる そうるcえ よう まい くのw せむ.'))
   .catch(e => console.log(e))
 
 alphabetify(text, 'kana', 'en')
   .then(result => assert.equal(result,
-    'Tell me, O mウsエ, オf thアt イngエnイオウs hエrオ whオ trアvエllエd fアr アnd wイdエ アftエr hエ hアd サcケd thエ fアmオウス tオwn オf Trオイ. Mアnイ cイtイエス ジd hエ vイシt, アnd mアnイ wエrエ セ nアトイオnス wイトh whオセ mアnnエrス アnド cウストmス hエ wアス アcクアイnテド; mオrエオvエr hエ スッフエrエド mウシ bイ セア wヒlエ トrイイnグ ト サベ ヒス オwn lイフエ アnド ブrイnグ ヒス ムエn サフエlイ ホメ; ブト ド wハト ヘ ミグhト ヘ cオウルド ノト サベ ヒス メン, フオル セィ ペリシエド ト一ロウグ一 セイル オwン シエィル フオルルイ イン エアトイング セ cアットレ オフ セ スン-ゴド 一イペリオン; ソ セ ゴド プレベンテド セム フロム エベル レアシング ホメ. テルル メ, トオ, アボウト アルル セセ フィングス, O ダウグ一テル オフ ジョベ, フロム wハトソエベル ソウルcエ ヨウ マイ クノw セム.'))
+    'Tell me, O mウsエ, オf thアt イngエnイオウs hエrオ whオ trアvエllエd fアr アnd wイdエ アftエr hエ hアd サcケd thエ fアmオウス tオwn オf Trオイ. Mアnイ cイtイエス ジd hエ vイシt, アnd mアnイ wエrエ セ nアチオnス wイトh whオセ mアnnエrス アnド cウストmス hエ wアス アcクアイnテド; mオrエオvエr hエ スッフエrエド mウチ bイ セア wヒlエ トrイイnグ ト サベ ヒス オwn lイフエ アnド ブrイnグ ヒス ムエn サフエlイ ホメ; ブト ド wハト ヘ ミグhト ヘ cオウルド ノト サベ ヒス メン, フオル トーエイ ペリシエド トーロウグー セイル オwン シイール フオルルイ イン エアチング セ cアットレ オフ セ スン-ゴド ーイペリオン; ソ セ ゴド プレベンテド セム フロム エベル レアチング ホメ. テルル メ, トオ, アボウト アルル セセ フィングス, O ダウグーテル オフ ジョベ, フロム wハトソエベル ソウルcエ ヨウ マイ クノw セム.'))
   .catch(e => console.log(e))
 
 alphabetify(text, 'cyrl-ru', 'en')
   .then(result => assert.equal(result,
-    'Tell me, O muse, of thаt ingenious hero вo trавelled fаr аnd вiдe аfter he hад sаckeд the fаmous toвn of Troy. Mаny cities дiд he вisit, аnд mаny вere зe nаtions вiз вose mаnners аnд кustoms he ваs акquайnteд; мoreoвer he suffereд мuкh бy seа вiлe tryйнг to sавe his oвн лife анд брiнг hiс мeн саfeлy hoмe; бuт дo ват he мiгhт he кoулд нoт савe hiс мeн, фнр зeй пeрiсheд зрoугh зeйр oвн шир фoллy iн eатiнг зe каттлe oф зe Сун-гoд Hyпэрыoн; сo зэ гoд прэвэнтэд зэм фрoм эвэр рэачынг hoмэ. Тэлл мэ, ту, абoут алл зэсэ зынгс, O даугhтэр oф Ёвэ, фрoм вацoэвэр сoуркэ ёу май кнoв зэм.'))
+    'Tell me, O muse, of thаt ingenious hero вo trавelled fаr аnd вiдe аfter he hад sаckeд the fаmous toвn of Troy. Mаny cities дiд he вisit, аnд mаny вere зe nаtions вiз вose mаnners аnд кustoms he ваs акquайnteд; мoreoвer he suffereд мuкh бy seа вiлe tryйнг to sавe his oвн лife анд брiнг hiс мeн саfeлy hoмe; бут дo ват he мiгhт he кoулд нoт савe hiс мeн, фoр зeй пeрiшeд зрoугh зeйр oвн шир фoллy ын eатынг зe каттлэ oф зэ Сун-гoд Hyпэрыoн; сo зэ гoд прэвэнтэд зэм фрoм эвэр рэачынг hoмэ. Тэлл мэ, ту, абoут алл зэсэ зынгс, O даугhтэр oф Ёвэ, фрoм вацoэвэр сoуркэ ёу май кнoв зэм.'))
   .catch(e => console.log(e))
 
 
 alphabetify('bequem', 'kana', 'de', 0, 1)
   .then(result => assert.equal(result, 'ベクエム'))
+  .catch(e => console.log(e))
+
+
+// Test 2: German "ie" should produce long vowel ー
+alphabetify('die Liebe', 'hira', 'de', 0, 1)
+  .then(result => assert.equal(result, 'どいー るいーべ'))
+  .catch(e => console.log(e))
+
+// Test 3: "x" should map to "кс" in Russian
+alphabetify('taxi', 'cyrl-ru', 'en', 0, 1)
+  .then(result => assert.equal(result, 'таксы'))
+  .catch(e => console.log(e))
+
+// Test 4: "ti" should map to ち (chi) in Japanese
+alphabetify('tip', 'hira', 'en', 0, 1)
+  .then(result => assert.equal(result, 'ちぷ'))
+  .catch(e => console.log(e))
+
+alphabetify('tip', 'kana', 'en', 0, 1)
+  .then(result => assert.equal(result, 'チプ'))
+  .catch(e => console.log(e))
+
+// Test 5: "tu" should map to つ (tsu) in Japanese
+alphabetify('tuna', 'hira', 'en', 0, 1)
+  .then(result => assert.equal(result, 'つな'))
+  .catch(e => console.log(e))
+
+alphabetify('tuna', 'kana', 'en', 0, 1)
+  .then(result => assert.equal(result, 'ツナ'))
+  .catch(e => console.log(e))
+
+// ============================================
+// Long vowel tests
+// ============================================
+
+// Test 6: English "ee" should produce long i (いー)
+alphabetify('see bee', 'hira', 'en', 0, 1)
+  .then(result => assert.equal(result, 'すいー ぶいー'))
+  .catch(e => console.log(e))
+
+alphabetify('see bee', 'kana', 'en', 0, 1)
+  .then(result => assert.equal(result, 'スイー ブイー'))
+  .catch(e => console.log(e))
+
+// Test 7: English "ey" should produce えい (ei diphthong)
+alphabetify('hey they', 'hira', 'en', 0, 1)
+  .then(result => assert.equal(result, 'ーえい とーえい'))
+  .catch(e => console.log(e))
+
+alphabetify('hey they', 'kana', 'en', 0, 1)
+  .then(result => assert.equal(result, 'ーエイ トーエイ'))
+  .catch(e => console.log(e))
+
+// Test 8: German "eh" should produce long e (えー)
+alphabetify('gehen sehen', 'hira', 'de', 0, 1)
+  .then(result => assert.equal(result, 'ぐえーえん すえーえん'))
+  .catch(e => console.log(e))
+
+alphabetify('gehen sehen', 'kana', 'de', 0, 1)
+  .then(result => assert.equal(result, 'グエーエン スエーエン'))
   .catch(e => console.log(e))
