@@ -51,16 +51,16 @@ jobs:
         run: npm run build
       - name: Create /de route
         run: |
-          mkdir -p dist/de
-          cp dist/index.html dist/de/index.html
+          mkdir -p docs/dist/de
+          cp docs/dist/index.html docs/dist/de/index.html
       - name: Copy CNAME
-        run: cp docs/CNAME dist/
+        run: cp docs/CNAME docs/dist/
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: docs/dist
 
   deploy:
     environment:

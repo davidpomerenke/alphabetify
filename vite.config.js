@@ -3,7 +3,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   root: 'docs',
   build: {
-    outDir: '../dist',
+    outDir: 'dist',
     emptyOutDir: true
   },
   // Rewrite /de to index.html for SPA-style routing
@@ -22,4 +22,3 @@ export default defineConfig({
     }
   ]
 })
-
