@@ -2,7 +2,7 @@
   "lang": "de",
   "slogan": "Alphabete lernen leicht gemacht.",
   "description": "Lerne ein neues Alphabet, indem du einen vertrauten Text liest, in dem nach und nach fremde Buchstaben auftauchen.",
-  "teaser": "<p>Mit Alphabetify lernst du neue Alphabete ganz nebenbei. Kopiere einfach einen Text hier rein – Nachrichten, ein Buch, oder Hausaufgaben. Der Text wird dann Schritt für Schritt umgewandelt: Erst sind alle Buchstaben vertraut, dann tauchen nach und nach fremde Zeichen auf. So gewöhnst du dich ganz natürlich an das neue Alphabet.</p><p>Probier's aus!</p>",
+  "teaser": "<p>Mit Alphabetify lernst du neue Alphabete ganz nebenbei. Kopiere einfach einen Text hier rein – Nachrichten, ein Buch, oder Hausaufgaben. Der Text wird dann Schritt für Schritt umgewandelt: Erst sind alle Buchstaben vertraut, dann tauchen nach und nach fremde Zeichen auf. So gewöhnst du dich ganz natürlich an das neue Alphabet.</p><p>Probier es aus!</p>",
   "select": "Alphabet wählen",
   "alphabets": {
     "grek-grc": "Altgriechisch",
