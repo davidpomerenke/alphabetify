@@ -18,7 +18,7 @@
   },
   "main": "lib/index.mjs",
   "scripts": {
-    "copy-alphabets": "cp -r alphabets/build docs/alphabets-build",
+    "copy-alphabets": "cp -r alphabets/build site/alphabets-build",
     "dev": "npm run copy-alphabets && vite",
     "build": "npm run copy-alphabets && vite build",
     "preview": "vite preview",

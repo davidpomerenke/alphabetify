@@ -79,7 +79,7 @@ A promise, which on resolution returns the string with the increasingly translit
 
 ### Usage in browser
 
-This module makes use of the `fs` module, which is available in Node JS, but not in the browser. For usage in the browser, use bundling with [Webpack](https://webpack.js.org/) or an equivalent tool and have a look at the configuration in this repository in `webpack.config.js`, `docs/webpack-entry.js` and `docs/index.js`.
+This module makes use of the `fs` module, which is available in Node JS, but not in the browser. For browser usage, use a bundler like [Vite](https://vitejs.dev/) or [Webpack](https://webpack.js.org/). See the `site/` folder in this repository for an example.
 
 ## Development
 

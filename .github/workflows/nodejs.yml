@@ -51,18 +51,18 @@ jobs:
         run: npm run build
       - name: Copy static assets
         run: |
-          mkdir -p docs/dist/de
-          cp docs/dist/index.html docs/dist/de/index.html
-          cp -r docs/i18n docs/dist/
-          cp -r docs/img docs/dist/
-          cp -r docs/alphabets-build docs/dist/
-          cp docs/CNAME docs/dist/
+          mkdir -p site/dist/de
+          cp site/dist/index.html site/dist/de/index.html
+          cp -r site/i18n site/dist/
+          cp -r site/img site/dist/
+          cp -r site/alphabets-build site/dist/
+          cp site/CNAME site/dist/
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/dist
+          path: site/dist
 
   deploy:
     environment:
