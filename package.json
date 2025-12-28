@@ -18,19 +18,18 @@
   },
   "main": "lib/index.mjs",
   "scripts": {
-    "start": "cd docs && bundle exec jekyll serve",
-    "build": "webpack",
-    "postinstall": "node alphabets/preprocess.mjs",
+    "dev": "vite docs",
+    "build": "vite build docs",
+    "preview": "vite preview docs",
+    "preprocess": "node alphabets/preprocess.mjs",
     "test": "node test/test.mjs",
     "coverage": "c8 --reporter=text-lcov npm test > coverage.lcov"
   },
   "engines": {
-    "node": ">= 13.0"
+    "node": ">= 18.0"
   },
   "devDependencies": {
     "c8": "^10.1.2",
-    "codecov": "^3.8.2",
-    "webpack": "^5.97.1",
-    "webpack-cli": "^5.1.4"
+    "vite": "^6.0.0"
   }
 }

@@ -1,71 +1,81 @@
----
-layout: default
-language: en
-options:
-  grek-grc: Greek (Ancient)
-  grek-el: Greek (Modern)
-  hira: Japanese Hiragana
-  kana: Japanese Katakana
-  cyrl-ru: Russian
-slogan: Learn alphabets naturally.
-description:
-  Learn a new alphabet by reading a good text in your native alphabet with more and more foreign letters.
-teaser: |
-  <p>
-  Alphabetify makes learning new alphabets easy.
-  Copypaste any text to the upper text area –
-  the breaking news,
-  your favourite book,
-  or a piece of homework.
-  Alphabetify will transform the text for you.
-  It starts with all symbols in your native alphabet,
-  then slowly introduces more and more foreign characters.
-  You will get used to them and learn the alphabet without any effort.
-  </p>
-  <p>
-  Try it!
-  </p>
-select: >
-  Select target alphabet
-note: >
-  Note: The sample text is very short for demonstration purposes.
-  You should probably choose a longer text, so that you can slowly get used to every single new letter.
-contributing: >
-  If you would like to contribute,
-  for example,
-  by pointing out transliteration mistakes or improvements,
-  you are very welcome to do so 
-  <a href=" https://github.com/davidpomerenke/alphabetify">
-    on Github
-  </a> 
-  or 
-  <a href="mailto:David Pomerenke<david@lernplattform.wiki>">
-    via mail</a>.
-  Feedback from language teachers on how useful the tool is actually in a real-world environment would also be very appreciated. 
-tags: >
-  #alphabet
-  #language
-  #language-learning
-  #transliteration
-  #greek-alphabet
-  #cyrillic
-  #hiragana
-  #katakana
-donate:
-  Donate
-sample: |
-  Shall I compare thee to a summer's day?
-  Thou art more lovely and more temperate:
-  Rough winds do shake the darling buds of May,
-  And summer's lease hath all too short a date:
-  Sometime too hot the eye of heaven shines,
-  And often is his gold complexion dimm'd;
-  And every fair from fair sometime declines,
-  By chance, or nature's changing course, untrimm'd;
-  But thy eternal summer shall not fade
-  Nor lose possession of that fair thou ow'st;
-  Nor shall Death brag thou wander'st in his shade,
-  When in eternal lines to time thou grow'st;
-  So long as men can breathe or eyes can see,
-  So long lives this, and this gives life to thee. 
----
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Alphabetify</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" id="meta-description" content="">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alphabetify">
+  <meta name="twitter:description" id="twitter-description" content="">
+  <meta name="twitter:creator" content="@davidpomerenke">
+  <meta name="twitter:image" content="https://alphabetify.js.org/img/thumbnail.png">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Alphabetify" />
+  <meta property="og:url" id="og-url" content="https://alphabetify.js.org/" />
+  <meta property="og:image" content="https://alphabetify.js.org/img/thumbnail.png" />
+  <meta property="og:description" id="og-description" content="" />
+
+  <link rel="stylesheet" href="./bootstrap.min.css" />
+</head>
+
+<body class="container" style="max-width: 75ch">
+
+  <header>
+    <br />
+    <nav id="lang-nav"></nav>
+    <br />
+    <h1 class="display-4" id="slogan"></h1>
+    <div id="teaser"></div>
+  </header>
+
+  <main>
+    <textarea id="source" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+      class="form-control" style="min-height: 200px"></textarea><br />
+    <select id="alphabet" class="custom-select">
+      <option hidden id="select-placeholder"></option>
+      <option disabled id="select-disabled"></option>
+    </select><br /><br />
+    <textarea id="target" readonly autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+      class="form-control" style="min-height: 200px"></textarea><br />
+    <p id="note"></p>
+    <p id="contributing"></p>
+    <p class="text-secondary" id="tags"></p>
+    <br />
+  </main>
+
+  <footer>
+    <a href="https://paypal.me/pools/c/8pn8fx7AKZ" target="_blank" class="d-flex justify-content-center">
+      <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" id="donate-img" alt="Donate" />
+    </a>
+    <br /><br />
+    <div class="d-flex justify-content-center">
+      <a href="mailto:David Pomerenke<david@lernplattform.wiki>" target="_blank">
+        <img src="./img/mail.svg" alt="Mail" style="padding: 12px" />
+      </a>
+      <a href="https://twitter.com/davidpomerenke/status/1264355475782500353" target="_blank">
+        <img src="./img/twitter.svg" alt="Twitter" style="padding: 12px" />
+      </a>
+      <a href="https://linkedin.com/in/davidpomerenke" target="_blank">
+        <img src="./img/linkedin.svg" alt="Linkedin" style="padding: 12px" />
+      </a>
+      <a href="https://github.com/davidpomerenke/alphabetify" target="_blank">
+        <img src="./img/github.svg" alt="Github" style="padding: 12px" />
+      </a>
+    </div>
+    <br /><br />
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+  <script>
+    !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.async = !0, p.src = s.api_host + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+    posthog.init('mrAhzb0wDWIXVEe8TUSNjhhISgdsP-ui8uCJCiHi3nI', { api_host: 'https://alphabetify-posthog.herokuapp.com' })
+  </script>
+
+</body>
+
+</html>
