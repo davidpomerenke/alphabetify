@@ -1,9 +1,9 @@
 {
   "lang": "en",
   "slogan": "Learn alphabets naturally.",
-  "description": "Learn a new alphabet by reading a good text in your native alphabet with more and more foreign letters.",
-  "teaser": "<p>Alphabetify makes learning new alphabets easy. Copypaste any text to the upper text area – the breaking news, your favourite book, or a piece of homework. Alphabetify will transform the text for you. It starts with all symbols in your native alphabet, then slowly introduces more and more foreign characters. You will get used to them and learn the alphabet without any effort.</p><p>Try it!</p>",
-  "select": "Select target alphabet",
+  "description": "Learn a new alphabet by reading familiar text with gradually more foreign letters.",
+  "teaser": "<p>Alphabetify helps you learn new alphabets effortlessly. Just paste any text – news, a book, homework – and watch it transform. It starts in familiar letters, then gradually introduces foreign characters. Before you know it, you'll be reading a new script.</p><p>Try it!</p>",
+  "select": "Choose alphabet",
   "alphabets": {
     "grek-grc": "Ancient Greek",
     "grek-el": "Modern Greek",
@@ -11,7 +11,7 @@
     "kana": "Katakana",
     "cyrl-ru": "Russian"
   },
-  "note": "Note: The sample text is very short for demonstration purposes. You should probably choose a longer text, so that you can slowly get used to every single new letter.",
-  "contributing": "If you would like to contribute, for example, by pointing out transliteration mistakes or improvements, you are very welcome to do so <a href=\"https://github.com/davidpomerenke/alphabetify\">on Github</a> or <a href=\"mailto:David Pomerenke<davidpomerenke@mailbox.org>\">via email</a>. Feedback from language teachers on how useful the tool is actually in a real-world environment would also be very appreciated.",
+  "note": "Tip: This sample is short. Longer texts work even better for learning.",
+  "contributing": "Feedback welcome – <a href=\"https://github.com/davidpomerenke/alphabetify/issues\">on Github</a> or <a href=\"mailto:davidpomerenke@mailbox.org\">via email</a>.",
   "sample": "Shall I compare thee to a summer's day?\nThou art more lovely and more temperate:\nRough winds do shake the darling buds of May,\nAnd summer's lease hath all too short a date:\nSometime too hot the eye of heaven shines,\nAnd often is his gold complexion dimm'd;\nAnd every fair from fair sometime declines,\nBy chance, or nature's changing course, untrimm'd;\nBut thy eternal summer shall not fade\nNor lose possession of that fair thou ow'st;\nNor shall Death brag thou wander'st in his shade,\nWhen in eternal lines to time thou grow'st;\nSo long as men can breathe or eyes can see,\nSo long lives this, and this gives life to thee."
 }

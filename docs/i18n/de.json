@@ -1,9 +1,9 @@
 {
   "lang": "de",
-  "slogan": "Intuitiv Alphabete lernen.",
-  "description": "Lerne ein neues Alphabet, indem du einen Text in deinem Mutter-Alphabet mit immer mehr fremden Buchstaben liest.",
-  "teaser": "<p>Alphabetify macht es einfach, neue Alphabete zu lernen. Kopiere einen beliebigen Text und füge ihn im oberen Textkasten ein - die neuesten Nachrichten, dein Lieblingsbuch, oder die Hausaufgaben. Alphabetify transformiert den Text für dich. Es fängt mit allen Symbolen deines Mutter-Alphabets an, und führt dann Schritt für Schritt mehr unbekannte Buchstaben ein. Du wirst dich an sie gewöhnen, und das Alphabet mühelos lernen.</p><p>Probier es aus!</p>",
-  "select": "Ziel-Alphabet auswählen",
+  "slogan": "Alphabete lernen leicht gemacht.",
+  "description": "Lerne ein neues Alphabet, indem du einen vertrauten Text liest, in dem nach und nach fremde Buchstaben auftauchen.",
+  "teaser": "<p>Mit Alphabetify lernst du neue Alphabete ganz nebenbei. Kopiere einfach einen Text hier rein – Nachrichten, ein Buch, oder Hausaufgaben. Der Text wird dann Schritt für Schritt umgewandelt: Erst sind alle Buchstaben vertraut, dann tauchen nach und nach fremde Zeichen auf. So gewöhnst du dich ganz natürlich an das neue Alphabet.</p><p>Probier's aus!</p>",
+  "select": "Alphabet wählen",
   "alphabets": {
     "grek-grc": "Altgriechisch",
     "grek-el": "Neugriechisch",
@@ -11,7 +11,7 @@
     "kana": "Katakana",
     "cyrl-ru": "Russisch"
   },
-  "note": "Anmerkung: Der Beispieltext ist sehr kurz, um das Prinzip anschaulich zu machen. Du solltest am besten einen längeren Text einfügen, so dass du dich langsam an jeden einzelnen neuen Buchstaben gewöhnen kannst.",
-  "contributing": "Jegliche Beiträge, z. B. das Melden von Fehlern in der Transliteration, sind <a href=\"https://github.com/davidpomerenke/alphabetify\">auf Github</a> oder <a href=\"mailto:David Pomerenke<davidpomerenke@mailbox.org>\">per Email</a> willkommen. Feedback von Sprachenlehrenden, wie nützlich das Tool tatsächlich ist, wäre auch sehr cool.",
+  "note": "Hinweis: Der Beispieltext ist kurz gehalten. Mit einem längeren Text funktioniert das Lernen noch besser.",
+  "contributing": "Feedback und Verbesserungsvorschläge sind willkommen – <a href=\"https://github.com/davidpomerenke/alphabetify/issues\">auf Github</a> oder <a href=\"mailto:davidpomerenke@mailbox.org\">per Email</a>.",
   "sample": "Ein Butterbrotpapier im Wald,\nda es beschneit wird, fühlt sich kalt...\nIn seiner Angst, wiewohl es nie\nan Denken vorher irgendwie\ngedacht, natürlich, als ein Ding\naus Lumpen usw., fing,\naus Angst, so sagte ich, fing an\nzu denken, fing, hob an, begann\nzu denken, denkt euch, was das heißt,\nbekam (aus Angst, so sagt' ich) - Geist,\nund zwar, versteht sich, nicht bloß so\nvom Himmel droben irgendwo,\nvielmehr infolge einer ganz\nexakt entstandnen Hirnsubstanz -\ndie aus Holz, Eiweiß, Mehl und Schmer,\n(durch Angst), mit Überspringung der\nsonst üblichen Weltalter, an\nihm Boden und Gefäß gewann -\n[(mit Überspringung) in und an\nihm Boden und Gefäß gewann.]\nMithilfe dieser Hilfe nun\nentschloß sich das Papier zum Tun,\nzum Leben, zum - gleichviel, es fing\nzu gehn an - wie ein Schmetterling...\nzu kriechen erst, zu fliegen drauf,\nbis übers Unterholz hinauf,\ndann über die Chaussee und quer\nund kreuz und links und hin und her -\nwie eben solch ein Tier zur Welt\n(je nach dem Wind) (und sonst) sich stellt.\nDoch, Freunde! werdet bleich gleich mir! -:\nEin Vogel, dick und ganz voll Gier,\nerblickt's (wir sind im Januar...) -\nund schickt sich an, mit Haut und Haar -\nund schickt sich an, mit Haar und Haut -\n(wer mag da endigen!) (mir graut) -\n(Bedenkt, was alles nötig war!) -\nund schickt sich an, mit Haut und Haar --\nein Butterbrotpapier im Wald\ngewinnt - aus Angst - Naturgestalt...\nGenug!! Der wilde Specht verschluckt\ndas unersetzliche Produkt..."
 }
