@@ -18,9 +18,10 @@
   },
   "main": "lib/index.mjs",
   "scripts": {
-    "dev": "vite docs",
-    "build": "vite build docs",
-    "preview": "vite preview docs",
+    "copy-alphabets": "cp -r alphabets/build docs/alphabets-build",
+    "dev": "npm run copy-alphabets && vite",
+    "build": "npm run copy-alphabets && vite build",
+    "preview": "vite preview",
     "preprocess": "node alphabets/preprocess.mjs",
     "test": "node test/test.mjs",
     "coverage": "c8 --reporter=text-lcov npm test > coverage.lcov"

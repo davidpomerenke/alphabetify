@@ -33,7 +33,7 @@ async function init() {
   }
   
   // Alphabet transform logic
-  const buildDir = 'https://raw.githubusercontent.com/davidpomerenke/alphabetify/master/alphabets/build'
+  const buildDir = './alphabets-build'
   const source = document.getElementById('source')
   const target = document.getElementById('target')
   const pillsContainer = document.getElementById('alphabet-pills')

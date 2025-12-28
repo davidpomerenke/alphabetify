@@ -48,6 +48,7 @@ The code string specifying the target alphabet:
 | `cyrl-ru`  | Russian           | :star::star:             |
 | `grek-el`  | Modern Greek      | :star::star::star:       |
 | `grek-grc` | Ancient Greek     | :star::star::star::star: |
+| `hang-ko`  | Korean (Hangul)   | :star:                   |
 | `hira`     | Japanese Hiragana | :star:                   |
 | `kana`     | Japanese Katakana | :star:                   |
 
@@ -127,6 +128,8 @@ The long form is a pair `[a, b]` where `alphabetify` will apply `text.replace(ne
 ### Note on transliteration
 
 - The aim of the transliteration is not to achieve phonetic equivalence, but rather to establish a simple set of one-to-one (or a-few-to-one) character matchings: I believe this is the easiest way for the reader to spot patterns and to memorize the new alphabet.
+
+- **Korean (Hangul)** is a special case: unlike the other scripts which are linear, Korean uses syllable blocks where 2-3 characters are composed into a single block. The implementation first maps Latin letters to Korean Jamo (individual letters), then composes them into proper syllable blocks. Orphan consonants (like the "ld" in "world") get an implicit 으 (eu) vowel inserted, following standard Romanization conventions.
 
 - However, when there are script-specific concepts which could not be expressed by such simple non-phonetic matchings, phonetics may be taken into account.
 

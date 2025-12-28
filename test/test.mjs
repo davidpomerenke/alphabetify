@@ -103,3 +103,37 @@ alphabetify('gehen sehen', 'hira', 'de', 0, 1)
 alphabetify('gehen sehen', 'kana', 'de', 0, 1)
   .then(result => assert.equal(result, 'グエーエン スエーエン'))
   .catch(e => console.log(e))
+
+// ============================================
+// Korean (Hangul) tests
+// ============================================
+
+// Test 9: Basic Korean syllable composition
+alphabetify('hello', 'hang-ko', 'en', 0, 1)
+  .then(result => assert.equal(result, '헬로'))
+  .catch(e => console.log(e))
+
+// Test 10: Korean with simple CV syllables
+alphabetify('banana', 'hang-ko', 'en', 0, 1)
+  .then(result => assert.equal(result, '바나나'))
+  .catch(e => console.log(e))
+
+// Test 11: Korean with final consonants
+alphabetify('king song', 'hang-ko', 'en', 0, 1)
+  .then(result => assert.equal(result, '킹 송'))
+  .catch(e => console.log(e))
+
+// Test 12: Korean with standalone vowels (should get silent ᄋ)
+alphabetify('Korea', 'hang-ko', 'en', 0, 1)
+  .then(result => assert.equal(result, '코레아'))
+  .catch(e => console.log(e))
+
+// Test 13: Korean with consonant clusters (should insert 으)
+alphabetify('milk', 'hang-ko', 'en', 0, 1)
+  .then(result => assert.equal(result, '밀크'))
+  .catch(e => console.log(e))
+
+// Test 14: Korean with digraphs (sh, ng)
+alphabetify('thing shop', 'hang-ko', 'en', 0, 1)
+  .then(result => assert.equal(result, '싱 솦'))
+  .catch(e => console.log(e))

@@ -29,7 +29,7 @@ html {
 }
 
 body {
-  font-family: 'Noto Sans', 'Noto Sans JP', 'Noto Sans Greek', system-ui, sans-serif;
+  font-family: 'Noto Sans', 'Noto Sans JP', 'Noto Sans KR', 'Noto Sans Greek', system-ui, sans-serif;
   line-height: 1.7;
   color: var(--text);
   background: var(--bg);

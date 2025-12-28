@@ -37,6 +37,7 @@ const main = () => {
 
 const preprocess = (alphabet, lang) => ({
   alphabet: alphabet.alphabet,
+  ...(alphabet.compose && { compose: alphabet.compose }),
   rules: alphabet.rules
     .map((ruleBlock, i, rules) =>
       rules

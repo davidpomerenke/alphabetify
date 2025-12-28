@@ -9,7 +9,8 @@
     "grek-el": "Neugriechisch",
     "hira": "Hiragana",
     "kana": "Katakana",
-    "cyrl-ru": "Russisch"
+    "cyrl-ru": "Russisch",
+    "hang-ko": "Koreanisch"
   },
   "note": "Hinweis: Der Beispieltext ist kurz gehalten. Mit einem längeren Text funktioniert das Lernen noch besser.",
   "contributing": "Feedback und Verbesserungsvorschläge sind willkommen – <a href=\"https://github.com/davidpomerenke/alphabetify/issues\">auf Github</a> oder <a href=\"mailto:davidpomerenke@mailbox.org\">per Email</a>.",
