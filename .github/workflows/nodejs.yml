@@ -56,6 +56,7 @@ jobs:
           cp -r site/i18n site/dist/
           cp -r site/img site/dist/
           cp -r site/alphabets-build site/dist/
+          cp site/favicon.svg site/dist/
           cp site/CNAME site/dist/
       - name: Setup Pages
         uses: actions/configure-pages@v5
