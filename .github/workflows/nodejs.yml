@@ -55,6 +55,7 @@ jobs:
           cp docs/dist/index.html docs/dist/de/index.html
           cp -r docs/i18n docs/dist/
           cp -r docs/img docs/dist/
+          cp -r docs/alphabets-build docs/dist/
           cp docs/CNAME docs/dist/
       - name: Setup Pages
         uses: actions/configure-pages@v5
