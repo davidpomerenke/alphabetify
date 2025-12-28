@@ -34,7 +34,7 @@ alphabetify(text, 'kana', 'en')
     'Tell me, O mウsエ, オf thアt イngエnイオウs hエrオ whオ trアvエllエd fアr アnd wイdエ アftエr hエ hアd サcケd thエ fアmオウス tオwn オf Trオイ. Mアnイ cイtイエス ジd hエ vイシt, アnd mアnイ wエrエ セ nアチオnス wイトh whオセ mアnnエrス アnド cウストmス hエ wアス アcクアイnテド; mオrエオvエr hエ スッフエrエド mウチ bイ セア wヒlエ トrイイnグ ト サベ ヒス オwn lイフエ アnド ブrイnグ ヒス ムエn サフエlイ ホメ; ブト ド wハト ヘ ミグhト ヘ cオウルド ノト サベ ヒス メン, フオル トーエイ ペリシエド トーロウグー セイル オwン シイール フオルルイ イン エアチング セ cアットレ オフ セ スン-ゴド ーイペリオン; ソ セ ゴド プレベンテド セム フロム エベル レアチング ホメ. テルル メ, トオ, アボウト アルル セセ フィングス, O ダウグーテル オフ ジョベ, フロム wハトソエベル ソウルcエ ヨウ マイ クノw セム.'))
   .catch(e => console.log(e))
 
-alphabetify(text, 'cyrl-ru', 'en')
+alphabetify(text, 'cyrl', 'en')
   .then(result => assert.equal(result,
     'Tell me, O muse, of thаt ingenious hero вo trавelled fаr аnd вiдe аfter he hад sаckeд the fаmous toвn of Troy. Mаny cities дiд he вisit, аnд mаny вere зe nаtions вiз вose mаnners аnд кustoms he ваs акquайnteд; мoreoвer he suffereд мuкh бy seа вiлe tryйнг to sавe his oвн лife анд брiнг hiс мeн саfeлy hoмe; бут дo ват he мiгhт he кoулд нoт савe hiс мeн, фoр зeй пeрiшeд зрoугh зeйр oвн шир фoллy ын eатынг зe каттлэ oф зэ Сун-гoд Hyпэрыoн; сo зэ гoд прэвэнтэд зэм фрoм эвэр рэачынг hoмэ. Тэлл мэ, ту, абoут алл зэсэ зынгс, O даугhтэр oф Ёвэ, фрoм вацoэвэр сoуркэ ёу май кнoв зэм.'))
   .catch(e => console.log(e))
@@ -51,7 +51,7 @@ alphabetify('die Liebe', 'hira', 'de', 0, 1)
   .catch(e => console.log(e))
 
 // Test 3: "x" should map to "кс" in Russian
-alphabetify('taxi', 'cyrl-ru', 'en', 0, 1)
+alphabetify('taxi', 'cyrl', 'en', 0, 1)
   .then(result => assert.equal(result, 'таксы'))
   .catch(e => console.log(e))
 
@@ -109,31 +109,31 @@ alphabetify('gehen sehen', 'kana', 'de', 0, 1)
 // ============================================
 
 // Test 9: Basic Korean syllable composition
-alphabetify('hello', 'hang-ko', 'en', 0, 1)
+alphabetify('hello', 'hang', 'en', 0, 1)
   .then(result => assert.equal(result, '헬로'))
   .catch(e => console.log(e))
 
 // Test 10: Korean with simple CV syllables
-alphabetify('banana', 'hang-ko', 'en', 0, 1)
+alphabetify('banana', 'hang', 'en', 0, 1)
   .then(result => assert.equal(result, '바나나'))
   .catch(e => console.log(e))
 
 // Test 11: Korean with final consonants
-alphabetify('king song', 'hang-ko', 'en', 0, 1)
+alphabetify('king song', 'hang', 'en', 0, 1)
   .then(result => assert.equal(result, '킹 송'))
   .catch(e => console.log(e))
 
 // Test 12: Korean with standalone vowels (should get silent ᄋ)
-alphabetify('Korea', 'hang-ko', 'en', 0, 1)
+alphabetify('Korea', 'hang', 'en', 0, 1)
   .then(result => assert.equal(result, '코레아'))
   .catch(e => console.log(e))
 
 // Test 13: Korean with consonant clusters (should insert 으)
-alphabetify('milk', 'hang-ko', 'en', 0, 1)
+alphabetify('milk', 'hang', 'en', 0, 1)
   .then(result => assert.equal(result, '밀크'))
   .catch(e => console.log(e))
 
 // Test 14: Korean with digraphs (sh, ng)
-alphabetify('thing shop', 'hang-ko', 'en', 0, 1)
+alphabetify('thing shop', 'hang', 'en', 0, 1)
   .then(result => assert.equal(result, '싱 솦'))
   .catch(e => console.log(e))

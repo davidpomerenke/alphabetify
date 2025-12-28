@@ -9,8 +9,8 @@
     "grek-el": "Modern Greek",
     "hira": "Hiragana",
     "kana": "Katakana",
-    "cyrl-ru": "Russian",
-    "hang-ko": "Korean"
+    "cyrl": "Cyrillic",
+    "hang": "Hangul"
   },
   "note": "Tip: This sample is short. Longer texts work even better for learning.",
   "contributing": "Feedback welcome – <a href=\"https://github.com/davidpomerenke/alphabetify/issues\">on Github</a> or <a href=\"mailto:davidpomerenke@mailbox.org\">via email</a>.",
