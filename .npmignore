@@ -1,5 +1,10 @@
 .github
-alphabets/build/
+alphabets/src/
+alphabets/preprocess.mjs
 docs/
 node_modules/
+site/
+test/
+test.mjs
+vite.config.js
 webpack.config.js
